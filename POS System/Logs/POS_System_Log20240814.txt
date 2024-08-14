@@ -1,0 +1,170 @@
+2024-08-14 14:04:42.846 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-14 14:04:44.777 +03:00 [INF] Now listening on: https://localhost:7156
+2024-08-14 14:04:46.037 +03:00 [INF] Now listening on: http://localhost:5291
+2024-08-14 14:04:46.196 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-14 14:04:46.201 +03:00 [INF] Hosting environment: Development
+2024-08-14 14:04:46.203 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-08-14 14:04:46.817 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-14 14:04:47.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 1085.4826ms
+2024-08-14 14:04:47.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-14 14:04:47.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-14 14:04:48.253 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 316.1931ms
+2024-08-14 14:04:48.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 519.5496ms
+2024-08-14 14:04:48.620 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-14 14:04:49.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1233.0973ms
+2024-08-14 14:05:02.374 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:05:02.550 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-14 14:05:02.559 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-14 14:05:02.562 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/api/SuperMarket - 401 0 null 187.8796ms
+2024-08-14 14:05:41.754 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7156/api/Auth/Login - application/json 62
+2024-08-14 14:05:41.774 +03:00 [INF] Executing endpoint 'POS_System.Controllers.AuthController.Login (POS System)'
+2024-08-14 14:05:41.851 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Request.SuperMarketLoginRequest) on controller POS_System.Controllers.AuthController (POS System).
+2024-08-14 14:05:46.575 +03:00 [INF] Executed DbCommand (159ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[Id], [s].[AccessFailedCount], [s].[Address], [s].[ConcurrencyStamp], [s].[Email], [s].[EmailConfirmed], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[NormalizedEmail], [s].[NormalizedUserName], [s].[Password], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[SecurityStamp], [s].[SupermarketName], [s].[TwoFactorEnabled], [s].[UserName]
+FROM [SuperMarket] AS [s]
+WHERE [s].[Email] = @__email_0
+2024-08-14 14:05:46.930 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Response.SuperMarketLoginResponseDto'.
+2024-08-14 14:05:47.051 +03:00 [INF] Executed action POS_System.Controllers.AuthController.Login (POS System) in 5172.9865ms
+2024-08-14 14:05:47.067 +03:00 [INF] Executed endpoint 'POS_System.Controllers.AuthController.Login (POS System)'
+2024-08-14 14:05:47.095 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7156/api/Auth/Login - 200 null application/json; charset=utf-8 5341.6508ms
+2024-08-14 14:06:17.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:06:17.582 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-14 14:06:17.586 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-14 14:06:17.588 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/api/SuperMarket - 401 0 null 39.5658ms
+2024-08-14 14:07:23.059 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7156/api/SuperMarket - application/json 152
+2024-08-14 14:07:23.078 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-14 14:07:23.080 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-14 14:07:23.083 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7156/api/SuperMarket - 401 0 null 25.6485ms
+2024-08-14 14:10:18.714 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-14 14:11:15.991 +03:00 [INF] Now listening on: https://localhost:7156
+2024-08-14 14:11:15.994 +03:00 [INF] Now listening on: http://localhost:5291
+2024-08-14 14:11:16.000 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-14 14:11:16.003 +03:00 [INF] Hosting environment: Development
+2024-08-14 14:11:16.005 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-08-14 14:11:17.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-14 14:11:18.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 931.799ms
+2024-08-14 14:11:18.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-14 14:11:18.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-14 14:11:18.377 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 41.1116ms
+2024-08-14 14:11:18.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 341.2933ms
+2024-08-14 14:11:18.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-14 14:11:19.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 475.701ms
+2024-08-14 14:11:35.753 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:11:35.933 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-14 14:11:35.944 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-14 14:11:35.982 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 401 0 null 229.3816ms
+2024-08-14 14:11:40.900 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:11:41.103 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:11:41.160 +03:00 [INF] Route matched with {action = "GetAllSuperMarkets", controller = "SuperMarket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSuperMarkets() on controller POS_System.Controllers.SuperMarketController (POS System).
+2024-08-14 14:11:42.075 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System) in 899.1723ms
+2024-08-14 14:11:42.081 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:11:42.135 +03:00 [ERR] 00000000-0000-0000-0000-000000000000 : Testing the logging...
+System.Exception: Testing the logging...
+   at POS_System.Controllers.SuperMarketController.GetAllSuperMarkets() in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Controllers\SuperMarketController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2024-08-14 14:11:42.765 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 500 null application/json; charset=utf-8 1864.4242ms
+2024-08-14 14:12:23.366 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-14 14:12:24.145 +03:00 [INF] Now listening on: https://localhost:7156
+2024-08-14 14:12:24.148 +03:00 [INF] Now listening on: http://localhost:5291
+2024-08-14 14:12:24.154 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-14 14:12:24.157 +03:00 [INF] Hosting environment: Development
+2024-08-14 14:12:24.159 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-08-14 14:12:26.684 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-14 14:12:27.802 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-14 14:12:27.833 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 1133.975ms
+2024-08-14 14:12:27.908 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-14 14:12:27.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 32.6016ms
+2024-08-14 14:12:28.008 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 205.9351ms
+2024-08-14 14:12:28.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-14 14:12:28.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 446.5146ms
+2024-08-14 14:12:41.392 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:12:41.690 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-14 14:12:41.703 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-14 14:12:41.733 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 401 0 null 341.6678ms
+2024-08-14 14:12:48.809 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:12:49.154 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:12:49.216 +03:00 [INF] Route matched with {action = "GetAllSuperMarkets", controller = "SuperMarket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSuperMarkets() on controller POS_System.Controllers.SuperMarketController (POS System).
+2024-08-14 14:12:50.402 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System) in 1172.6818ms
+2024-08-14 14:12:50.410 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:12:50.495 +03:00 [ERR] 4f35397c-48de-44a7-81b6-3d46706b0fe1 : Testing the logging...
+System.Exception: Testing the logging...
+   at POS_System.Controllers.SuperMarketController.GetAllSuperMarkets() in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Controllers\SuperMarketController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2024-08-14 14:12:50.699 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 500 null application/json; charset=utf-8 1889.918ms
+2024-08-14 14:12:54.238 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:12:54.273 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:12:54.276 +03:00 [INF] Route matched with {action = "GetAllSuperMarkets", controller = "SuperMarket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSuperMarkets() on controller POS_System.Controllers.SuperMarketController (POS System).
+2024-08-14 14:12:54.423 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System) in 137.7018ms
+2024-08-14 14:12:54.429 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:12:54.514 +03:00 [ERR] a9dbe4ae-3070-4284-b285-c91ee6f359e3 : Testing the logging...
+System.Exception: Testing the logging...
+   at POS_System.Controllers.SuperMarketController.GetAllSuperMarkets() in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Controllers\SuperMarketController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2024-08-14 14:12:54.555 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 500 null application/json; charset=utf-8 317.9638ms
+2024-08-14 14:12:56.647 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-14 14:12:56.668 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:12:56.673 +03:00 [INF] Route matched with {action = "GetAllSuperMarkets", controller = "SuperMarket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSuperMarkets() on controller POS_System.Controllers.SuperMarketController (POS System).
+2024-08-14 14:12:56.772 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System) in 85.9993ms
+2024-08-14 14:12:56.777 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-14 14:12:56.856 +03:00 [ERR] b1481c8b-59f0-4716-a2fa-2390bbacb40e : Testing the logging...
+System.Exception: Testing the logging...
+   at POS_System.Controllers.SuperMarketController.GetAllSuperMarkets() in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Controllers\SuperMarketController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2024-08-14 14:12:56.901 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 500 null application/json; charset=utf-8 253.8854ms
