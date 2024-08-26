@@ -12,6 +12,6 @@ namespace Services.Interfaces
     {
         string CreateJwtToken(SuperMarket superMakret);
 
-        string CreateJwtToeknForEmployee(Employee employee);
+        string CreateJwtTokenForEmployee(Employee employee);
     }
 }

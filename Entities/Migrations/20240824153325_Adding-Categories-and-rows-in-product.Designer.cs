@@ -4,6 +4,7 @@ using Entities.Database_Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entities.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240824153325_Adding-Categories-and-rows-in-product")]
+    partial class AddingCategoriesandrowsinproduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -975,7 +978,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6f54e3bd-0054-46d0-bab4-805d8172e986",
+                            ConcurrencyStamp = "0a03c196-5ff1-4d06-b41f-a1e991e5a816",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumber = 0,
@@ -987,7 +990,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "048dd59f-fd07-4317-88e0-2f30a1778ff3",
+                            ConcurrencyStamp = "d62442a2-7332-4551-8804-6e8200dabde1",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumber = 0,

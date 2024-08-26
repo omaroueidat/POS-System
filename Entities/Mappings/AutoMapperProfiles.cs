@@ -25,6 +25,7 @@ namespace Entities.Mappings
             // Maps for Employee
             CreateMap<EmployeeRequestDto, Employee>().ReverseMap();
             CreateMap<Employee, EmployeeResponseDto>().ReverseMap();
+            CreateMap<EmployeeLoginRequest, Employee>();
 
             // Mapping for the Customer
             CreateMap<CustomerRequestDto, Customer>().ReverseMap();

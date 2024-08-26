@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace Entities.Models.EmployeeModels
 {
-    public class Employee : IdentityUser
+    public class Employee
     {
+        [Key]
         public Guid EmployeeId { get; set; }
 
         public Guid SupermarketId { get; set; }

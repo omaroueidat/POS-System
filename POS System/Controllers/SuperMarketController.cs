@@ -20,7 +20,7 @@ namespace POS_System.Controllers
         }
 
         [HttpGet]
-        [Authorize] // the user should be logged in as a supermarket to access this method
+        [Authorize()] // the user should be logged in as a supermarket to access this method
         public async Task<IActionResult> GetAllSuperMarkets()
         {
 

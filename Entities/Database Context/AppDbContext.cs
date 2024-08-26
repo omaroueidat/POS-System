@@ -3,7 +3,6 @@ using Entities.Models.EmployeeModels;
 using Entities.Models.CustomerModels;
 using Entities.Models.InvoiceModels;
 using Entities.Models.ProductModels;
-
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,7 +16,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Entities.Database_Context
 {
-    public class AppDbContext : IdentityDbContext<SuperMarket,IdentityRole<Guid>,Guid>
+    public class AppDbContext : IdentityDbContext<SuperMarket, IdentityRole<Guid>, Guid>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
@@ -65,6 +64,12 @@ namespace Entities.Database_Context
                 .HasForeignKey(id => id.InvoiceId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Stock>()
+                .HasOne<SuperMarket>()
+                .WithMany()
+                .HasForeignKey(stock => stock.SuperMarketId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             // Set the table names
             modelBuilder.Entity<SuperMarket>().ToTable(nameof(SuperMarket));
 
@@ -103,7 +108,7 @@ namespace Entities.Database_Context
             // Seed Employees
             string employeeJson = System.IO.File.ReadAllText("DummyData/Employee.json");
             List<Employee>? employees = System.Text.Json.JsonSerializer.Deserialize<List<Employee>>(employeeJson);
-            
+
             foreach (var employee in employees)
             {
                 modelBuilder.Entity<Employee>().HasData(employee);

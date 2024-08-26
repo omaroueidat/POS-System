@@ -1,6 +1,6 @@
 use POS_System
 GO
-		
+
 CREATE TRIGGER trg_UpdateTimeSupermarket
 ON Supermarket
 AFTER UPDATE
@@ -9,7 +9,7 @@ BEGIN
 
 	Update SuperMarket
 	SET UpdatedAt = GETDATE()
-	Where SupermarketId IN (SELECT SupermarketId From inserted)
+	Where Id IN (SELECT Id From inserted)
 
 END;
 GO

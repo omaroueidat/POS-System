@@ -1,0 +1,97 @@
+2024-08-23 14:45:16.269 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-23 14:45:19.171 +03:00 [INF] Now listening on: https://localhost:7156
+2024-08-23 14:45:19.212 +03:00 [INF] Now listening on: http://localhost:5291
+2024-08-23 14:45:19.253 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-23 14:45:19.526 +03:00 [INF] Hosting environment: Development
+2024-08-23 14:45:19.530 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-08-23 14:45:45.563 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger - null null
+2024-08-23 14:45:48.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger - 301 0 null 2531.6765ms
+2024-08-23 14:45:48.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-23 14:45:48.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 449.1091ms
+2024-08-23 14:45:48.607 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-23 14:45:48.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui-bundle.js - null null
+2024-08-23 14:45:48.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui.css - null null
+2024-08-23 14:45:48.622 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-23 14:45:48.637 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-23 14:45:48.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 230.2457ms
+2024-08-23 14:45:49.022 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-23 14:45:49.365 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-23 14:45:49.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui.css - 200 143943 text/css 944.4787ms
+2024-08-23 14:45:49.561 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 954.2054ms
+2024-08-23 14:45:49.517 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-23 14:45:49.705 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 1101.4548ms
+2024-08-23 14:45:49.812 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1190.425ms
+2024-08-23 14:45:50.263 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-23 14:45:50.848 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/favicon-32x32.png - null null
+2024-08-23 14:45:51.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1032.0398ms
+2024-08-23 14:45:51.458 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-08-23 14:45:51.466 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/favicon-32x32.png - 200 628 image/png 618.3998ms
+2024-08-23 14:50:07.205 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/ - null null
+2024-08-23 14:50:07.618 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/ - 404 0 null 413.8213ms
+2024-08-23 14:50:07.633 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://44aa-213-204-95-71.ngrok-free.app/, Response status code: 404
+2024-08-23 14:50:30.711 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/ - null null
+2024-08-23 14:50:32.080 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/ - 404 0 null 1368.9488ms
+2024-08-23 14:50:32.174 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://44aa-213-204-95-71.ngrok-free.app/, Response status code: 404
+2024-08-23 14:51:38.510 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/ - null null
+2024-08-23 14:51:39.016 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/ - 404 0 null 505.6972ms
+2024-08-23 14:51:39.080 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://44aa-213-204-95-71.ngrok-free.app/, Response status code: 404
+2024-08-23 14:52:25.356 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarket - null null
+2024-08-23 14:52:25.394 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-23 14:52:25.404 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-23 14:52:25.408 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarket - 401 0 null 51.7739ms
+2024-08-23 14:52:56.954 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarket - null null
+2024-08-23 14:52:56.998 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-23 14:52:57.003 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-23 14:52:57.005 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarket - 401 0 null 51.6816ms
+2024-08-23 14:57:53.533 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarketauth/login - application/json 69
+2024-08-23 14:57:53.596 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-08-23 14:57:53.600 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-08-23 14:57:53.603 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarketauth/login - 405 0 null 69.8267ms
+2024-08-23 14:58:04.205 +03:00 [INF] Request starting HTTP/1.1 POST https://44aa-213-204-95-71.ngrok-free.app/api/Supermarketauth/login - application/json 69
+2024-08-23 14:58:04.641 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-23 14:58:04.783 +03:00 [INF] Route matched with {action = "Login", controller = "SuperMarketAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Request.SuperMarketLoginRequest) on controller POS_System.Controllers.SuperMarketAuthController (POS System).
+2024-08-23 14:58:16.883 +03:00 [INF] Executed DbCommand (291ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[Id], [s].[AccessFailedCount], [s].[Address], [s].[ConcurrencyStamp], [s].[Email], [s].[EmailConfirmed], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[NormalizedEmail], [s].[NormalizedUserName], [s].[Password], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[SecurityStamp], [s].[SupermarketName], [s].[TwoFactorEnabled], [s].[UserName]
+FROM [SuperMarket] AS [s]
+WHERE [s].[Email] = @__email_0
+2024-08-23 14:58:17.501 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Response.SuperMarketLoginResponseDto'.
+2024-08-23 14:58:17.532 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketAuthController.Login (POS System) in 12728.3068ms
+2024-08-23 14:58:17.538 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-23 14:58:17.568 +03:00 [INF] Request finished HTTP/1.1 POST https://44aa-213-204-95-71.ngrok-free.app/api/Supermarketauth/login - 200 null application/json; charset=utf-8 13363.948ms
+2024-08-23 14:59:12.044 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarket - null null
+2024-08-23 14:59:12.202 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-23 14:59:12.239 +03:00 [INF] Route matched with {action = "GetAllSuperMarkets", controller = "SuperMarket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllSuperMarkets() on controller POS_System.Controllers.SuperMarketController (POS System).
+2024-08-23 14:59:12.710 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[AccessFailedCount], [s].[Address], [s].[ConcurrencyStamp], [s].[Email], [s].[EmailConfirmed], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[NormalizedEmail], [s].[NormalizedUserName], [s].[Password], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[SecurityStamp], [s].[SupermarketName], [s].[TwoFactorEnabled], [s].[UserName], [e].[EmployeeId], [e].[Address], [e].[EmployeeImage], [e].[EmployeeName], [e].[PhoneNumber], [e].[SupermarketId]
+FROM [SuperMarket] AS [s]
+LEFT JOIN [Employee] AS [e] ON [s].[Id] = [e].[SupermarketId]
+ORDER BY [s].[Id]
+2024-08-23 14:59:13.370 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DTO.Response.SuperMarketResponseDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-23 14:59:13.535 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System) in 1275.8457ms
+2024-08-23 14:59:13.547 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketController.GetAllSuperMarkets (POS System)'
+2024-08-23 14:59:13.551 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/Supermarket - 200 null application/json; charset=utf-8 1508.1088ms
+2024-08-23 15:01:49.371 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/employee - null null
+2024-08-23 15:01:49.389 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeeImage (POS System)'
+2024-08-23 15:01:49.403 +03:00 [INF] Route matched with {action = "GetEmployeeImage", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployeeImage(System.String) on controller POS_System.Controllers.EmployeeController (POS System).
+2024-08-23 15:01:49.424 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-23 15:01:49.476 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeeImage (POS System) in 68.1093ms
+2024-08-23 15:01:49.481 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeeImage (POS System)'
+2024-08-23 15:01:49.483 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/employee - 400 null application/problem+json; charset=utf-8 112.2921ms
+2024-08-23 15:03:28.615 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/employee/5f2cfd7a-f135-4dad-9ebd-97014f203791 - null null
+2024-08-23 15:03:28.675 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-23 15:03:28.678 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-23 15:03:28.682 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/employee/5f2cfd7a-f135-4dad-9ebd-97014f203791 - 401 0 null 67.146ms
+2024-08-23 15:04:13.340 +03:00 [INF] Request starting HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/employee/5f2cfd7a-f135-4dad-9ebd-97014f203791 - null null
+2024-08-23 15:04:13.426 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-23 15:04:13.440 +03:00 [INF] Route matched with {action = "GetEmployeesOfSupermarket", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesOfSupermarket(System.Guid) on controller POS_System.Controllers.EmployeeController (POS System).
+2024-08-23 15:04:13.985 +03:00 [INF] Executed DbCommand (215ms) [Parameters=[@__superMarketId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Address], [e].[EmployeeImage], [e].[EmployeeName], [e].[PhoneNumber], [e].[SupermarketId]
+FROM [Employee] AS [e]
+WHERE [e].[SupermarketId] = @__superMarketId_0
+2024-08-23 15:04:14.042 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DTO.Response.EmployeeResponseDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-23 15:04:14.053 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System) in 606.9829ms
+2024-08-23 15:04:14.057 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-23 15:04:14.060 +03:00 [INF] Request finished HTTP/1.1 GET https://44aa-213-204-95-71.ngrok-free.app/api/employee/5f2cfd7a-f135-4dad-9ebd-97014f203791 - 200 null application/json; charset=utf-8 720.7378ms

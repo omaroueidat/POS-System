@@ -14,6 +14,7 @@ namespace Entities.Models.SuperMarketModels
         [Key]
         public Guid StockId { get; set; }
         public Guid ProductId { get; set; }
+        public Guid SuperMarketId { get; set; }
         public long Quantity { get; set; }
 
         // For Navigation

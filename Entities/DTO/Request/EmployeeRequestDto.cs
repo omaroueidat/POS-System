@@ -17,8 +17,6 @@ namespace Entities.DTO.Request
         [Required]
         public string? EmployeeName { get; set; }
 
-        public string? EmployeeImage { get; set; }
-
         [MaxLength(40)]
         [Required]
         public string? Address { get; set; }

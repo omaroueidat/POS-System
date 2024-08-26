@@ -1,5 +1,7 @@
 ﻿using Entities.DTO.Request;
+using Entities.DTO.Response;
 using Entities.Models.EmployeeModels;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +12,18 @@ namespace Services.Interfaces
 {
     public interface IEmployeeService
     {
-        public Task<Employee> GetEmployee(Guid employeeId);
+        public Task<Employee?> Authenticate(int passcode);
+        public Task<EmployeeResponseDto> GetEmployee(Guid employeeId);
 
-        public Task<List<Employee>> GetEmployees();
+        public Task<List<EmployeeResponseDto>> GetEmployees();
 
-        public Task<List<Employee>> GetEmployeesOfSuperMarket(Guid superMarketId);
+        public Task<List<EmployeeResponseDto>> GetEmployeesOfSuperMarket(Guid superMarketId);
 
-        public Task<Employee> AddNewEmployee(EmployeeRequestDto employeeRequest);
+        public Task<EmployeeResponseDto> AddNewEmployee(EmployeeRequestDto employeeRequest, IFormFile image);
 
-        public Task<Employee?> UpdateEmployee(Guid employeeId, EmployeeRequestDto employeeRequest, int passcode);
+        public Task<EmployeeResponseDto?> UpdateEmployee(Guid employeeId, EmployeeRequestDto employeeRequest, int passcode, IFormFile image);
 
         public Task<bool> DeleteEmployee(Guid employeeId);
+
     }
 }

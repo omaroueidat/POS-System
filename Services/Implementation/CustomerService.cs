@@ -125,7 +125,7 @@ namespace Services.Implementation
 
         public async Task<CustomerResponseDto?> UpdateCustomer(Guid customerId, Guid superMarketId, CustomerRequestDto customerRequest)
         {
-            // check is the customer exist and belong to the supermaket that is trying to delete the customer
+            // check is the customer exist and belong to the supermaket that is trying to update the customer
             var customer = await _context.Customers
                 .Where(c => c.CustomerId == customerId)
                 .Join(_context.CustomerInvoices,

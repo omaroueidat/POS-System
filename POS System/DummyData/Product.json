@@ -3,49 +3,48 @@
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4A",
         "ProductName": "Apple",
         "Price": 1.50,
-        "Category": "Fruits",
-        "Stock": 100
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97E"
     },
     {
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4B",
         "ProductName": "Banana",
         "Price": 0.99,
-        "Category": "Fruits",
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97A",
         "Stock": 150
     },
     {
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4C",
         "ProductName": "Carrot",
         "Price": 1.20,
-        "Category": "Vegetables",
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97E",
         "Stock": 200
     },
     {
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4D",
         "ProductName": "Tomato",
         "Price": 2.00,
-        "Category": "Vegetables",
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97E",
         "Stock": 180
     },
     {
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4E",
         "ProductName": "Milk",
         "Price": 1.00,
-        "Category": "Dairy",
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97E",
         "Stock": 120
     },
     {
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4F",
         "ProductName": "Bread",
         "Price": 2.50,
-        "Category": "Bakery",
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97D",
         "Stock": 90
     },
     {
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD41",
         "ProductName": "Chicken",
         "Price": 5.00,
-        "Category": "Meat",
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97E",
         "Stock": 80
     }
 ]

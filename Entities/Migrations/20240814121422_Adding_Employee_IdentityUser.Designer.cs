@@ -4,6 +4,7 @@ using Entities.Database_Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entities.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240814121422_Adding_Employee_IdentityUser")]
+    partial class Adding_Employee_IdentityUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,23 +24,6 @@ namespace Entities.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Entities.Domain.Product.Category", b =>
-                {
-                    b.Property<Guid>("CategoryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CategoryImage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CategoryName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CategoryId");
-
-                    b.ToTable("Category");
-                });
 
             modelBuilder.Entity("Entities.Models.CustomerModels.Customer", b =>
                 {
@@ -302,9 +288,21 @@ namespace Entities.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
                     b.Property<string>("Address")
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
 
                     b.Property<string>("EmployeeImage")
                         .HasColumnType("nvarchar(max)");
@@ -313,11 +311,41 @@ namespace Entities.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("PhoneNumber")
                         .HasColumnType("int");
 
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("SupermarketId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeeId");
 
@@ -329,90 +357,167 @@ namespace Entities.Migrations
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86aa"),
+                            AccessFailedCount = 0,
                             Address = "1 Main St",
+                            ConcurrencyStamp = "d6f6316a-a5a2-43c0-8bdb-22db20e8f1d0",
+                            EmailConfirmed = false,
                             EmployeeName = "Emily Roberts",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 1234,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86ab"),
+                            AccessFailedCount = 0,
                             Address = "2 Main St",
+                            ConcurrencyStamp = "b0a5327f-a303-432b-8ba7-4b2febad4c33",
+                            EmailConfirmed = false,
                             EmployeeName = "Michael Johnson",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 2345,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86ac"),
+                            AccessFailedCount = 0,
                             Address = "3 Elm St",
+                            ConcurrencyStamp = "97dba193-06e7-4ec1-995b-3e7303fc5edd",
+                            EmailConfirmed = false,
                             EmployeeName = "Sophia Williams",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 3456,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86ad"),
+                            AccessFailedCount = 0,
                             Address = "4 Elm St",
+                            ConcurrencyStamp = "bb1af46e-f1c2-4f39-a926-bd96d58c82a7",
+                            EmailConfirmed = false,
                             EmployeeName = "Oliver Brown",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 4567,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86ae"),
+                            AccessFailedCount = 0,
                             Address = "5 Oak St",
+                            ConcurrencyStamp = "09f76024-aa3b-42e1-91a9-a57ea36302cf",
+                            EmailConfirmed = false,
                             EmployeeName = "Isabella Davis",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 5678,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86af"),
+                            AccessFailedCount = 0,
                             Address = "6 Pine St",
+                            ConcurrencyStamp = "aeab970c-23da-491e-aeb9-d7b95f54b50d",
+                            EmailConfirmed = false,
                             EmployeeName = "Liam Martinez",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 6789,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86a1"),
+                            AccessFailedCount = 0,
                             Address = "7 Maple St",
+                            ConcurrencyStamp = "2fb4f10c-4a4b-4da4-b56e-73503d3d0f49",
+                            EmailConfirmed = false,
                             EmployeeName = "Mia Wilson",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 7890,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86a2"),
+                            AccessFailedCount = 0,
                             Address = "8 Birch St",
+                            ConcurrencyStamp = "e7d78294-b48e-4919-bd34-5259939bad7f",
+                            EmailConfirmed = false,
                             EmployeeName = "James Miller",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 8901,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86a3"),
+                            AccessFailedCount = 0,
                             Address = "9 Cedar St",
+                            ConcurrencyStamp = "7bf72a0d-0bd2-48d6-87eb-4a7d50fc5eda",
+                            EmailConfirmed = false,
                             EmployeeName = "Ava Taylor",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 9012,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86a4"),
+                            AccessFailedCount = 0,
                             Address = "10 Spruce St",
+                            ConcurrencyStamp = "b38aa088-72fc-4a54-bfc8-28b23b433d8b",
+                            EmailConfirmed = false,
                             EmployeeName = "Ethan Anderson",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 1234,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             EmployeeId = new Guid("536d010d-465c-4c4b-84e9-18d5df4d86a5"),
+                            AccessFailedCount = 0,
                             Address = "11 Willow St",
+                            ConcurrencyStamp = "44a5f1f3-aa1e-4f9a-8180-a2bf1aec4565",
+                            EmailConfirmed = false,
                             EmployeeName = "Olivia Harris",
+                            Id = new Guid("00000000-0000-0000-0000-000000000000"),
+                            LockoutEnabled = false,
                             PhoneNumber = 1234,
-                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792")
+                            PhoneNumberConfirmed = false,
+                            SupermarketId = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
+                            TwoFactorEnabled = false
                         });
                 });
 
@@ -688,17 +793,8 @@ namespace Entities.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<float>("Cost")
                         .HasColumnType("real");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Discount")
-                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("ExpDate")
                         .HasColumnType("datetime2");
@@ -712,12 +808,7 @@ namespace Entities.Migrations
                     b.Property<long>("ProductCode")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("ProductImage")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("ProductId");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Product", (string)null);
 
@@ -725,9 +816,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4a"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97e"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 1.5f,
@@ -736,9 +825,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4b"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97a"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 0.99f,
@@ -747,9 +834,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4c"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97e"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 1.2f,
@@ -758,9 +843,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4d"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97e"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 2f,
@@ -769,9 +852,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4e"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97e"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 1f,
@@ -780,9 +861,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4f"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97d"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 2.5f,
@@ -791,9 +870,7 @@ namespace Entities.Migrations
                         new
                         {
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd41"),
-                            CategoryId = new Guid("63e2c242-e7c2-4ac1-8545-8c635c2cb97e"),
                             Cost = 0f,
-                            Discount = 0m,
                             ExpDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             ManDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Price = 5f,
@@ -832,14 +909,9 @@ namespace Entities.Migrations
                     b.Property<long>("Quantity")
                         .HasColumnType("bigint");
 
-                    b.Property<Guid>("SuperMarketId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("StockId");
 
                     b.HasIndex("ProductId");
-
-                    b.HasIndex("SuperMarketId");
 
                     b.ToTable("Stock", (string)null);
 
@@ -848,50 +920,43 @@ namespace Entities.Migrations
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd8a"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4a"),
-                            Quantity = 100L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 100L
                         },
                         new
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd8b"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4b"),
-                            Quantity = 150L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 150L
                         },
                         new
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd8c"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4c"),
-                            Quantity = 200L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 200L
                         },
                         new
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd8d"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4d"),
-                            Quantity = 180L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 180L
                         },
                         new
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd8e"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4e"),
-                            Quantity = 120L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 120L
                         },
                         new
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd8f"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd4f"),
-                            Quantity = 90L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 90L
                         },
                         new
                         {
                             StockId = new Guid("5983cb43-1364-4227-bbf0-0c6ade03bd81"),
                             ProductId = new Guid("d37d22d5-ba61-4d70-ba0c-b7adff04cd41"),
-                            Quantity = 80L,
-                            SuperMarketId = new Guid("00000000-0000-0000-0000-000000000000")
+                            Quantity = 80L
                         });
                 });
 
@@ -975,7 +1040,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6f54e3bd-0054-46d0-bab4-805d8172e986",
+                            ConcurrencyStamp = "37e88e95-56bb-44c2-9074-ec2e79da5482",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumber = 0,
@@ -987,7 +1052,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "048dd59f-fd07-4317-88e0-2f30a1778ff3",
+                            ConcurrencyStamp = "2d6e747c-621a-4466-9d2d-487acac65389",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumber = 0,
@@ -1202,17 +1267,6 @@ namespace Entities.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Entities.Models.ProductModels.Product", b =>
-                {
-                    b.HasOne("Entities.Domain.Product.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
             modelBuilder.Entity("Entities.Models.SuperMarketModels.SalesHistory", b =>
                 {
                     b.HasOne("Entities.Models.InvoiceModels.Invoice", "Invoice")
@@ -1229,12 +1283,6 @@ namespace Entities.Migrations
                     b.HasOne("Entities.Models.ProductModels.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Entities.Models.SuperMarketModels.SuperMarket", null)
-                        .WithMany()
-                        .HasForeignKey("SuperMarketId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

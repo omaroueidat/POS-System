@@ -19,7 +19,7 @@ namespace POS_System.ExtensionClasses
         // Extension Method to Add the Services to make code cleaner and not messy in program.cs
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
-
+            services.AddHttpContextAccessor();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             services.AddEndpointsApiExplorer();
 
