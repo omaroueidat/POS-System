@@ -20,25 +20,25 @@ namespace POS_System.Controllers
             _employeeService = employeeService;
         }
 
-
-        [HttpGet("{superMarketId:Guid}")]
+        // Changing the Endpoint to take the Id from the jwt token instead of passing it through the url
+        [HttpGet]
         [Authorize]
-        public async Task<IActionResult> GetEmployeesOfSupermarket(Guid superMarketId)
+        public async Task<IActionResult> GetEmployeesOfSupermarket()
         { 
             // Get the Id of the logged in SuperMarket
             var authorizedSuperMarketId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            // The Id of the logged in SuperMarket should be as the sent SuperMarket
-            if (superMarketId.ToString() != authorizedSuperMarketId)
+            // Convert the Id from string to Guid
+            if (!Guid.TryParse(authorizedSuperMarketId, out var superMarketId))
             {
-                return Forbid();
+                return Unauthorized();
             }
 
             var employees = await _employeeService.GetEmployeesOfSuperMarket(superMarketId);
 
             if (employees is null)
             {
-                return NotFound("The SuperMakret You are looking for does nor exit!");
+                return NotFound("The SuperMakret You are looking for does not exit!");
             }
 
             return Ok(employees);
