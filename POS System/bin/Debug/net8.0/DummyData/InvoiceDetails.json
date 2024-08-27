@@ -1,0 +1,44 @@
+[
+    {
+        "InvoiceDetailsId": "a1b8c9d0-e5f1-4a6b-9e0c-7f8d9a1b2c3d",
+        "InvoiceId": "b8b1d94c-7b45-4f7e-8b79-3a24894d4a77",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4A",
+        "Quantity": 2
+    },
+    {
+        "InvoiceDetailsId": "b2c9d0e1-f6a2-4b7c-8d1e-8e2f9a3b4c5d",
+        "InvoiceId": "b8b1d94c-7b45-4f7e-8b79-3a24894d4a77",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4B",
+        "Quantity": 1
+    },
+    {
+        "InvoiceDetailsId": "c3d0e1f2-7b8c-4d9a-8e2b-9a4f5b6c7d8e",
+        "InvoiceId": "c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4C",
+        "Quantity": 5
+    },
+    {
+        "InvoiceDetailsId": "d4e1f2g3-8c9d-4e0a-9f3b-0a1c2b3d4e5f",
+        "InvoiceId": "c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4D",
+        "Quantity": 3
+    },
+    {
+        "InvoiceDetailsId": "e5f2g3h4-9d0a-4e1b-8c2d-3b4e5c6d7f8g",
+        "InvoiceId": "d1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4E",
+        "Quantity": 4
+    },
+    {
+        "InvoiceDetailsId": "f6g3h4i5-0a1b-4c2d-9e3f-4b5c6d7e8f9g",
+        "InvoiceId": "d1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4F",
+        "Quantity": 2
+    },
+    {
+        "InvoiceDetailsId": "g7h4i5j6-1b2c-4d3e-9f4g-5c6d7e8f9a0b",
+        "InvoiceId": "e2d5a4c1-0c5f-4d1a-9c9a-f7a6b0e1e76a",
+        "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD41",
+        "Quantity": 3
+    }
+]

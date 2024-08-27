@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Entities.Domain.Product;
 
 
 namespace Entities.Database_Context
@@ -136,6 +137,14 @@ namespace Entities.Database_Context
             foreach (var invoice in invoices)
             {
                 modelBuilder.Entity<Invoice>().HasData(invoice);
+            }
+
+            // Seed Category
+            string categoryJson = System.IO.File.ReadAllText("DummyData/Category.json");
+            List<Category>? categories = System.Text.Json.JsonSerializer.Deserialize<List<Category>>(categoryJson);
+            foreach (var category in categories)
+            {
+                modelBuilder.Entity<Category>().HasData(category);
             }
 
             // Seed Products

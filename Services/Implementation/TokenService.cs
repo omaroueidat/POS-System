@@ -32,9 +32,10 @@ namespace Services.Implementation
             claims.Add(new Claim(ClaimTypes.Email, superMarket.Email)); // add the email to the claim
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])); // create a secuirity key from the jwt key we made
-            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256); 
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            
+            // Adding the SuperMarketId as Name Identifier
+            claims.Add(new Claim(ClaimTypes.NameIdentifier, superMarket.Id.ToString()));
 
             var token = new JwtSecurityToken(  // creating the token
                 _configuration["Jwt:Issuer"],

@@ -34,7 +34,7 @@ namespace POS_System.Controllers
         {
             var superMarket = await _superMarketService.CreateNewSupermarket(superMarketRequest);
 
-            return CreatedAtAction(nameof(SuperMarketController.AddNewSuperMarket), new { superMarketId = superMarket.Id });
+            return CreatedAtAction(nameof(SuperMarketController.GetSuperMarket), new { superMarketId = superMarket.Id });
         }
 
         // POST: api/Auth/Login
@@ -44,6 +44,7 @@ namespace POS_System.Controllers
         public async Task<IActionResult> Login([FromBody] SuperMarketLoginRequest superMarketRequest)
         {
             var superMarketResponse = await _superMarketService.Authenticate(superMarketRequest.Email, superMarketRequest.Password);
+
 
             if (superMarketResponse is null)
             {

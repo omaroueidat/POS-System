@@ -1,0 +1,42 @@
+[
+    {
+        "CustomerId": "d1e6a2f5-0d5a-4d35-835b-623eaf6b3b43",
+        "InvoiceId": "b8b1d94c-7b45-4f7e-8b79-3a24894d4a77"
+    },
+    {
+        "CustomerId": "5e1d1c9c-8f2a-4b0b-bcf7-1c44e5a62e1d",
+        "InvoiceId": "c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99"
+    },
+    {
+        "CustomerId": "e0d11f8f-fb26-4b58-9b1b-fb18c8b01a2e",
+        "InvoiceId": "d1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b"
+    },
+    {
+        "CustomerId": "2d7418db-c4e4-44c4-947f-e8dc56f0c517",
+        "InvoiceId": "e2d5a4c1-0c5f-4d1a-9c9a-f7a6b0e1e76a"
+    },
+    {
+        "CustomerId": "4f4d08a4-8827-4d65-89a6-0a50f4769fa4",
+        "InvoiceId": "f3e6d9b2-1d6a-4e4a-8f0a-4c6b9f7e8e8b"
+    },
+    {
+        "CustomerId": "c8f76e8d-1b9e-4d3d-8d58-20b2a0f11a3b",
+        "InvoiceId": "b8b1d94c-7b45-4f7e-8b79-3a24894d4a77"
+    },
+    {
+        "CustomerId": "f4e5b029-3b58-4a67-b1b6-2d23ac7f69d2",
+        "InvoiceId": "c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99"
+    },
+    {
+        "CustomerId": "2b98e616-8e6a-4c4a-8908-7e8f6c6b9f7e",
+        "InvoiceId": "d1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b"
+    },
+    {
+        "CustomerId": "7f62de52-2c1e-4a79-9e46-3d2f5e1d8e43",
+        "InvoiceId": "e2d5a4c1-0c5f-4d1a-9c9a-f7a6b0e1e76a"
+    },
+    {
+        "CustomerId": "6e8e03c6-8d21-44a3-9f5d-17443477d05f",
+        "InvoiceId": "f3e6d9b2-1d6a-4e4a-8f0a-4c6b9f7e8e8b"
+    }
+]

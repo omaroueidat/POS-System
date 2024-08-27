@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "Si6rsiBY4StLOrIywUU4XJ+oibl0jq+75aLnBOHm0Zg=",
+  "Source": "POS System",
+  "BasePath": "_content/POS System",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "POS System\\wwwroot",
+      "Source": "POS System",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\WorkShop\\.Net Development\\Projects\\POS System\\POS System\\wwwroot\\",
+      "BasePath": "_content/POS System",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

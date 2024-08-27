@@ -1,11 +1,11 @@
 ﻿using Entities.DTO.Request;
-using Entities.Migrations;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using POS_System.CustomActionFilters;
 using Services.Interfaces;
+using System.Security.Claims;
 
 namespace POS_System.Controllers
 {
@@ -20,10 +20,20 @@ namespace POS_System.Controllers
             _employeeService = employeeService;
         }
 
+
         [HttpGet("{superMarketId:Guid}")]
         [Authorize]
         public async Task<IActionResult> GetEmployeesOfSupermarket(Guid superMarketId)
-        {
+        { 
+            // Get the Id of the logged in SuperMarket
+            var authorizedSuperMarketId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            // The Id of the logged in SuperMarket should be as the sent SuperMarket
+            if (superMarketId.ToString() != authorizedSuperMarketId)
+            {
+                return Forbid();
+            }
+
             var employees = await _employeeService.GetEmployeesOfSuperMarket(superMarketId);
 
             if (employees is null)

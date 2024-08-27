@@ -1,0 +1,37 @@
+﻿[
+    {
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97A",
+        "CategoryName": "Drinks",
+        "CategoryImage": null,
+        "CreatedAt": "2024-08-24T10:00:00",
+        "UpdatedAt": "2024-08-24T10:00:00"
+    },
+    {
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97B",
+        "CategoryName": "Food",
+        "CategoryImage": null,
+        "CreatedAt": "2024-08-24T10:00:00",
+        "UpdatedAt": "2024-08-24T10:00:00"
+    },
+    {
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97C",
+        "CategoryName": "Accessories",
+        "CategoryImage": null,
+        "CreatedAt": "2024-08-24T10:00:00",
+        "UpdatedAt": "2024-08-24T10:00:00"
+    },
+    {
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97D",
+        "CategoryName": "Bakery",
+        "CategoryImage": null,
+        "CreatedAt": "2024-08-24T10:00:00",
+        "UpdatedAt": "2024-08-24T10:00:00"
+    },
+    {
+        "CategoryId": "63E2C242-E7C2-4AC1-8545-8C635C2CB97E",
+        "CategoryName": "Meat",
+        "CategoryImage": null,
+        "CreatedAt": "2024-08-24T10:00:00",
+        "UpdatedAt": "2024-08-24T10:00:00"
+    }
+]

@@ -975,7 +975,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203791"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6f54e3bd-0054-46d0-bab4-805d8172e986",
+                            ConcurrencyStamp = "a91c4f8f-a025-45af-83e2-19e45596623b",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumber = 0,
@@ -987,7 +987,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("5f2cfd7a-f135-4dad-9ebd-97014f203792"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "048dd59f-fd07-4317-88e0-2f30a1778ff3",
+                            ConcurrencyStamp = "7c27b3c2-cb23-4f47-9a89-970a4d9dbbf0",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumber = 0,

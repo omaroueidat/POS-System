@@ -1,0 +1,89 @@
+2024-08-27 08:56:05.758 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7156/api/SuperMarketAuth/Login - application/json 62
+2024-08-27 08:56:18.990 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-27 08:56:22.945 +03:00 [INF] Route matched with {action = "Login", controller = "SuperMarketAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Request.SuperMarketLoginRequest) on controller POS_System.Controllers.SuperMarketAuthController (POS System).
+2024-08-27 08:57:22.410 +03:00 [INF] Executed DbCommand (10,919ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[Id], [s].[AccessFailedCount], [s].[Address], [s].[ConcurrencyStamp], [s].[Email], [s].[EmailConfirmed], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[NormalizedEmail], [s].[NormalizedUserName], [s].[Password], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[SecurityStamp], [s].[SupermarketName], [s].[TwoFactorEnabled], [s].[UserName]
+FROM [SuperMarket] AS [s]
+WHERE [s].[Email] = @__email_0
+2024-08-27 08:57:32.606 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketAuthController.Login (POS System) in 32282.6862ms
+2024-08-27 08:57:33.248 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-27 08:57:34.433 +03:00 [ERR] e71f1a91-1123-447e-b08e-1fed4791cd8d : Sequence contains more than one element.
+System.InvalidOperationException: Sequence contains more than one element.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Services.Implementation.SupermarketService.Authenticate(String email, String password)
+   at POS_System.Controllers.SuperMarketAuthController.Login(SuperMarketLoginRequest superMarketRequest)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext)
+2024-08-27 08:57:34.479 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7156/api/SuperMarketAuth/Login - 500 null application/json; charset=utf-8 88720.5867ms
+2024-08-27 09:06:01.590 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7156/api/SuperMarketAuth/Login - application/json 62
+2024-08-27 09:06:01.620 +03:00 [INF] Executing endpoint 'POS_System.Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-27 09:06:01.702 +03:00 [INF] Route matched with {action = "Login", controller = "SuperMarketAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Request.SuperMarketLoginRequest) on controller POS_System.Controllers.SuperMarketAuthController (POS System).
+2024-08-27 09:06:04.821 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[Id], [s].[AccessFailedCount], [s].[Address], [s].[ConcurrencyStamp], [s].[Email], [s].[EmailConfirmed], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[NormalizedEmail], [s].[NormalizedUserName], [s].[Password], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[SecurityStamp], [s].[SupermarketName], [s].[TwoFactorEnabled], [s].[UserName]
+FROM [SuperMarket] AS [s]
+WHERE [s].[Email] = @__email_0
+2024-08-27 09:06:09.333 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Response.SuperMarketLoginResponseDto'.
+2024-08-27 09:06:09.368 +03:00 [INF] Executed action POS_System.Controllers.SuperMarketAuthController.Login (POS System) in 7623.3349ms
+2024-08-27 09:06:09.374 +03:00 [INF] Executed endpoint 'POS_System.Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-27 09:06:09.379 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7156/api/SuperMarketAuth/Login - 200 null application/json; charset=utf-8 7789.53ms
+2024-08-27 09:06:38.596 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/Employee/5f2cfd7a-f135-4dad-9ebd-97014f203791 - null null
+2024-08-27 09:06:38.662 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-27 09:06:38.675 +03:00 [INF] Route matched with {action = "GetEmployeesOfSupermarket", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesOfSupermarket(System.Guid) on controller POS_System.Controllers.EmployeeController (POS System).
+2024-08-27 09:06:38.701 +03:00 [INF] Executing ForbidResult with authentication schemes (["You are authorized to view this data!"]).
+2024-08-27 09:06:38.739 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System) in 58.9845ms
+2024-08-27 09:06:38.745 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-27 09:06:38.942 +03:00 [ERR] 5fc3a168-ed6b-44f1-85d2-c756036e6cad : No authentication handler is registered for the scheme 'You are authorized to view this data!'. The registered schemes are: Bearer. Did you forget to call AddAuthentication().Add[SomeAuthHandler]("You are authorized to view this data!",...)?
+System.InvalidOperationException: No authentication handler is registered for the scheme 'You are authorized to view this data!'. The registered schemes are: Bearer. Did you forget to call AddAuthentication().Add[SomeAuthHandler]("You are authorized to view this data!",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ForbidAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ForbidResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext)
+2024-08-27 09:06:38.980 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/Employee/5f2cfd7a-f135-4dad-9ebd-97014f203791 - 500 null application/json; charset=utf-8 383.8631ms
+2024-08-27 09:07:02.024 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/Employee/30f7b5d4-6f6f-41ef-9cd6-ae050c0812ac - null null
+2024-08-27 09:07:02.073 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-27 09:07:02.075 +03:00 [INF] Route matched with {action = "GetEmployeesOfSupermarket", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesOfSupermarket(System.Guid) on controller POS_System.Controllers.EmployeeController (POS System).
+2024-08-27 09:07:02.082 +03:00 [INF] Executing ForbidResult with authentication schemes (["You are authorized to view this data!"]).
+2024-08-27 09:07:02.100 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System) in 20.0746ms
+2024-08-27 09:07:02.104 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-27 09:07:02.202 +03:00 [ERR] 7e8039fe-f282-462b-b9f4-1e5b48b71a84 : No authentication handler is registered for the scheme 'You are authorized to view this data!'. The registered schemes are: Bearer. Did you forget to call AddAuthentication().Add[SomeAuthHandler]("You are authorized to view this data!",...)?
+System.InvalidOperationException: No authentication handler is registered for the scheme 'You are authorized to view this data!'. The registered schemes are: Bearer. Did you forget to call AddAuthentication().Add[SomeAuthHandler]("You are authorized to view this data!",...)?
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ForbidAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ForbidResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext)
+2024-08-27 09:07:02.273 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/Employee/30f7b5d4-6f6f-41ef-9cd6-ae050c0812ac - 500 null application/json; charset=utf-8 249.3627ms
+2024-08-27 09:08:15.100 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/Employee/30f7b5d4-6f6f-41ef-9cd6-ae050c0812ac - null null
+2024-08-27 09:08:23.434 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-08-27 09:08:23.437 +03:00 [INF] Route matched with {action = "GetEmployeesOfSupermarket", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesOfSupermarket(System.Guid) on controller POS_System.Controllers.EmployeeController (POS System).
