@@ -2,100 +2,11 @@
     {
         "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AA",
         "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
+        "AppUserId": "57C34BC4-A4D5-4124-8F95-DB13978FBEAC",
         "EmployeeName": "Emily Roberts",
         "PhoneNumber": 1234,
         "Address": "1 Main St",
         "CreatedAt": "2024-08-01T10:00:00",
         "UpdatedAt": "2024-08-01T10:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AB",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
-        "EmployeeName": "Michael Johnson",
-        "PhoneNumber": 2345,
-        "Address": "2 Main St",
-        "CreatedAt": "2024-08-02T11:00:00",
-        "UpdatedAt": "2024-08-02T11:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AC",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
-        "EmployeeName": "Sophia Williams",
-        "PhoneNumber": 3456,
-        "Address": "3 Elm St",
-        "CreatedAt": "2024-08-03T12:00:00",
-        "UpdatedAt": "2024-08-03T12:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AD",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
-        "EmployeeName": "Oliver Brown",
-        "PhoneNumber": 4567,
-        "Address": "4 Elm St",
-        "CreatedAt": "2024-08-04T13:00:00",
-        "UpdatedAt": "2024-08-04T13:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AE",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
-        "EmployeeName": "Isabella Davis",
-        "PhoneNumber": 5678,
-        "Address": "5 Oak St",
-        "CreatedAt": "2024-08-05T14:00:00",
-        "UpdatedAt": "2024-08-05T14:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AF",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
-        "EmployeeName": "Liam Martinez",
-        "PhoneNumber": 6789,
-        "Address": "6 Pine St",
-        "CreatedAt": "2024-08-06T15:00:00",
-        "UpdatedAt": "2024-08-06T15:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A1",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203792",
-        "EmployeeName": "Mia Wilson",
-        "PhoneNumber": 7890,
-        "Address": "7 Maple St",
-        "CreatedAt": "2024-08-07T16:00:00",
-        "UpdatedAt": "2024-08-07T16:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A2",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203792",
-        "EmployeeName": "James Miller",
-        "PhoneNumber": 8901,
-        "Address": "8 Birch St",
-        "CreatedAt": "2024-08-08T17:00:00",
-        "UpdatedAt": "2024-08-08T17:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A3",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203792",
-        "EmployeeName": "Ava Taylor",
-        "PhoneNumber": 9012,
-        "Address": "9 Cedar St",
-        "CreatedAt": "2024-08-09T18:00:00",
-        "UpdatedAt": "2024-08-09T18:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A4",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203792",
-        "EmployeeName": "Ethan Anderson",
-        "PhoneNumber": 1234,
-        "Address": "10 Spruce St",
-        "CreatedAt": "2024-08-10T19:00:00",
-        "UpdatedAt": "2024-08-10T19:00:00"
-    },
-    {
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A5",
-        "SupermarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203792",
-        "EmployeeName": "Olivia Harris",
-        "PhoneNumber": 1234,
-        "Address": "11 Willow St",
-        "CreatedAt": "2024-08-11T20:00:00",
-        "UpdatedAt": "2024-08-11T20:00:00"
     }
 ]

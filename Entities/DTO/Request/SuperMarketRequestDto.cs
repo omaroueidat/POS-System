@@ -20,14 +20,5 @@ namespace Entities.DTO.Request
         public string? Address { get; set; }
 
         public int PhoneNumber { get; set; }
-
-        [EmailAddress]
-        [Required]
-        public string? Email { get; set; }
-
-        [Required]
-        [MinLength(8, ErrorMessage = "Password should contain at least 8 characters")]
-        public string? Password { get; set; }
-
     }
 }

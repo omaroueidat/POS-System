@@ -1,0 +1,32 @@
+﻿[
+    {
+        "Id": "57C34BC4-A4D5-4124-8F95-DB13978FBEAA",
+        "Email": "admin@gmail.com",
+        "NormalizedEmail": "ADMIN@GMAIL.COM",
+        "Password": "admin123",
+        "NormalizedPassword": "ADMIN123",
+        "UserName": "admin",
+        "NormalizedUserName": "ADMIN",
+        "Role": "Admin"
+    },
+    {
+        "Id": "57C34BC4-A4D5-4124-8F95-DB13978FBEAB",
+        "Email": "tawfeer@gmail.com",
+        "NormalizedEmail": "TAWFEER@GMAIL.COM",
+        "Password": "12345678",
+        "NormalizedPassword": "12345678",
+        "UserName": "tawfeer",
+        "NormalizedUserName": "TAWFEER",
+        "Role": "SuperMarket"
+    },
+    {
+        "Id": "57C34BC4-A4D5-4124-8F95-DB13978FBEAC",
+        "Email": "employee@gmail.com",
+        "NormalizedEmail": "EMPLOYEE@GMAIL.COM",
+        "Password": "employee123",
+        "NormalizedPassword": "EMPLOYEE123",
+        "UserName": "employee",
+        "NormalizedUserName": "EMPLOYEE",
+        "Role": "Employee"
+    }
+]

@@ -38,6 +38,7 @@ namespace Services.Implementation
 
         public async Task<bool> DeleteCustomer(Guid customerId, Guid superMarketId)
         {
+            // Joining to check if the customer belongs to the supermarket that is trying to delete
             var customer = await _context.Customers
                 .Where(c => c.CustomerId == customerId)
                 .Join(_context.CustomerInvoices,
@@ -68,6 +69,7 @@ namespace Services.Implementation
 
         public async Task<List<CustomerResponseDto>?> GetAllCustomers(Guid superMarketId)
         {
+            // Joining to get the customers of the SuperMarket.
             var customers = await _context.Customers
                 .Join(_context.CustomerInvoices,
                     c => c.CustomerId,
@@ -96,6 +98,7 @@ namespace Services.Implementation
 
         public async Task<CustomerResponseDto?> GetCustomer(Guid customerId, Guid superMarketId)
         {
+            // Same as delete, have to check if the customer bleongs to the superMarket before giving his details
             var customer = await _context.Customers
                 .Where(c => c.CustomerId == customerId)
                 .Join(_context.CustomerInvoices,
@@ -116,7 +119,7 @@ namespace Services.Implementation
             if (customer is null)
             {
                 return null;
-            }
+            } 
 
             var customerResponse = _mapper.Map<CustomerResponseDto>(customer);
 

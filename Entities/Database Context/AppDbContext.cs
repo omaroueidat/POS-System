@@ -13,18 +13,20 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Entities.Domain.Product;
+using Entities.Domain.Application;
+using System.Text.Json;
 
 
 namespace Entities.Database_Context
 {
-    public class AppDbContext : IdentityDbContext<SuperMarket, IdentityRole<Guid>, Guid>
+    public class AppDbContext : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
 
         public DbSet<SuperMarket> SuperMarkets { get; set; }
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<EmployeePasscode> EmployeePasscodes { get; set; }
         public DbSet<EmployeeLog> EmployeeLogs { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
@@ -38,7 +40,7 @@ namespace Entities.Database_Context
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<SuperMarket>().Property(e => e.Id).HasDefaultValueSql("NEWID()");
+            modelBuilder.Entity<SuperMarket>().Property(e => e.SuperMarketId).HasDefaultValueSql("NEWID()");
 
             // Set the Foriegn Keys
             modelBuilder.Entity<Employee>()
@@ -53,11 +55,6 @@ namespace Entities.Database_Context
                 .HasForeignKey(el => el.EmployeeId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<EmployeePasscode>()
-                .HasOne<Employee>()
-                .WithOne(e => e.EmployeePasscode)
-                .HasForeignKey<EmployeePasscode>(code => code.EmployeeId)
-                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<InvoiceDetails>()
                 .HasOne<Invoice>()
@@ -71,12 +68,29 @@ namespace Entities.Database_Context
                 .HasForeignKey(stock => stock.SuperMarketId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            // Make the FK in AppUser for each Employee, SuperMarket and Admin to cascade
+            modelBuilder.Entity<SuperMarket>()
+                .HasOne<AppUser>(s => s.AppUser)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Restrict);
+                
+            modelBuilder.Entity<Employee>()
+                .HasOne<AppUser>(s => s.AppUser)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Admin>()
+                .HasOne<AppUser>(s => s.AppUser)
+                .WithOne()
+                .OnDelete(DeleteBehavior.Cascade);
+
             // Set the table names
             modelBuilder.Entity<SuperMarket>().ToTable(nameof(SuperMarket));
 
+            modelBuilder.Entity<Admin>().ToTable(nameof(Admin));
+
             modelBuilder.Entity<Employee>().ToTable(nameof(Employee));
 
-            modelBuilder.Entity<EmployeePasscode>().ToTable(nameof(EmployeePasscode));
 
             modelBuilder.Entity<EmployeeLog>().ToTable(nameof(EmployeeLog));
 
@@ -97,6 +111,49 @@ namespace Entities.Database_Context
 
             // Seeding Data to the Database
 
+            // Seeding Roles to IdentityRoles
+            // Seed Roles
+
+
+            modelBuilder.Entity<IdentityRole<Guid>>().HasData(
+                new IdentityRole<Guid>
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "SuperMarket",
+                    NormalizedName = "SUPERMARKET"
+                },
+                new IdentityRole<Guid>
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Employee",
+                    NormalizedName = "EMPLOYEE"
+                },
+                new IdentityRole<Guid>
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Admin",
+                    NormalizedName = "ADMIN"
+                }
+            );
+
+            // Seed AppUser
+            string appUserJson = System.IO.File.ReadAllText("DummyData/AppUser.json");
+            List<AppUser>? appUsers = System.Text.Json.JsonSerializer.Deserialize<List<AppUser>>(appUserJson);
+
+            foreach (var appUser in appUsers)
+            {
+                modelBuilder.Entity<AppUser>().HasData(appUser);
+            }
+
+            // Seed Admin
+            string adminJson = File.ReadAllText("DummyData/Admin.json");
+            List<Admin>? admins = JsonSerializer.Deserialize<List<Admin>>(adminJson);
+
+            foreach (var admin in admins)
+            {
+                modelBuilder.Entity<Admin>().HasData(admin);
+            }
+
             // Seed Supermarkets
             string supermarketJson = System.IO.File.ReadAllText("DummyData/Supermarket.json");
             List<SuperMarket>? supermarkets = System.Text.Json.JsonSerializer.Deserialize<List<SuperMarket>>(supermarketJson);
@@ -115,13 +172,6 @@ namespace Entities.Database_Context
                 modelBuilder.Entity<Employee>().HasData(employee);
             }
 
-            // Seed EmployeePassCodes
-            string codeJson = System.IO.File.ReadAllText("DummyData/EmployeePassCode.json");
-            List<EmployeePasscode>? codes = System.Text.Json.JsonSerializer.Deserialize<List<EmployeePasscode>>(codeJson);
-            foreach (var code in codes)
-            {
-                modelBuilder.Entity<EmployeePasscode>().HasData(code);
-            }
 
             // Seed Customers
             string customerJson = System.IO.File.ReadAllText("DummyData/Customer.json");

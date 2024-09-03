@@ -15,9 +15,6 @@ namespace Entities.DTO.Response
 
         public int PhoneNumber { get; set; }
 
-        public string? Email { get; set; }
-
-        public string? Password { get; set; }
-        public List<Models.EmployeeModels.Employee>? Employees { get; set; }
+        public List<Employee>? Employees { get; set; }
     }
 }

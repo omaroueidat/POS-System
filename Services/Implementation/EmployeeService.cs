@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using Entities.Database_Context;
+using Entities.Domain.Application;
 using Entities.DTO.Request;
 using Entities.DTO.Response;
 using Entities.Models.EmployeeModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Services.Interfaces;
 using System;
@@ -23,28 +25,25 @@ namespace Services.Implementation
         private readonly IMapper _mapper;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _webHostEnviroment;
+        private readonly UserManager<AppUser> userManager;
 
-        public EmployeeService(AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor, IWebHostEnvironment webHostEnvironment)
+        public EmployeeService(AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor, IWebHostEnvironment webHostEnvironment, UserManager<AppUser> userManager)
         {
             _context = context;
             _mapper = mapper;
             _httpContextAccessor = httpContextAccessor;
             _webHostEnviroment = webHostEnvironment;
+            this.userManager = userManager;
         }
 
-        public async Task<Employee?> Authenticate(int passcode)
-        {
-            var employee = await _context.Employees
-                .Include(e => e.EmployeePasscode)
-                .SingleOrDefaultAsync(e => e.EmployeePasscode.Passcode == passcode);
 
-            return employee;
-        }
-
-        public async Task<EmployeeResponseDto?> AddNewEmployee(EmployeeRequestDto employeeRequest, IFormFile image)
+        public async Task<EmployeeResponseDto?> AddNewEmployee(EmployeeRequestDto employeeRequest, IFormFile image, Guid superMarketId)
         {
             // Map the EmployeeRequest to Employee
             var employee = _mapper.Map<Employee>(employeeRequest);
+
+            // Add the SuperMarket id to the employee
+            employee.SupermarketId = superMarketId;
             
             // Get the Image URL from the Method Add Photo so we can save it to the database
             string imageUrl = await AddPhoto(image, employee.EmployeeId);
@@ -65,12 +64,15 @@ namespace Services.Implementation
         public async Task<bool> DeleteEmployee(Guid employeeId)
         {
             var employee = await _context.Employees
+                .Include(e => e.AppUser)
                 .SingleOrDefaultAsync(e => e.EmployeeId == employeeId);
 
             if (employee is null)
             {
                 return false;
             }
+
+            await userManager.DeleteAsync(employee.AppUser);
 
             _context.Employees.Remove(employee);
 
@@ -82,7 +84,6 @@ namespace Services.Implementation
         public async Task<EmployeeResponseDto?> GetEmployee(Guid employeeId)
         {
             var employee = await _context.Employees
-                .Include(e => e.EmployeePasscode)
                 .Include(e => e.EmployeeLogs)
                 .SingleOrDefaultAsync(e => e.EmployeeId == employeeId);
 
@@ -112,15 +113,23 @@ namespace Services.Implementation
             return employeeResponse;
         }
 
+        public async Task<Employee> GetEmployeeByAppUserId(Guid appUserId)
+        {
+            var employee = await _context.Employees
+                .SingleOrDefaultAsync(e => e.AppUserId == appUserId);
+
+            return employee;
+        }
+
         public async Task<List<EmployeeResponseDto>> GetEmployees()
         {
             return _mapper.Map<List<EmployeeResponseDto>>(await _context.Employees.ToListAsync());
         }
 
-        public async Task<EmployeeResponseDto?> UpdateEmployee(Guid employeeId, EmployeeRequestDto employeeRequest, int passcode, IFormFile image)
+        public async Task<EmployeeResponseDto?> UpdateEmployee(Guid employeeId, EmployeeRequestDto employeeRequest, IFormFile image, string email, string password)
         {
             var employeeToUpdate = await _context.Employees
-                .Include(e => e.EmployeePasscode)
+                .Include(e => e.AppUser)
                 .SingleOrDefaultAsync(e => e.EmployeeId == employeeId);
 
             if (employeeToUpdate is null)
@@ -129,7 +138,7 @@ namespace Services.Implementation
             }
 
             // Update the details
-            UpdateEmployeeDetails(employeeToUpdate, employeeRequest, passcode);
+            UpdateEmployeeDetails(employeeToUpdate, employeeRequest, email, password);
 
             // Update the image, no need to save new image fileName since the name is the employeeId
             await AddPhoto(image, employeeId);
@@ -142,12 +151,18 @@ namespace Services.Implementation
 
         }
 
-        private void UpdateEmployeeDetails(Employee employee, EmployeeRequestDto employeeRequest, int passcode)
+        private void UpdateEmployeeDetails(Employee employee, EmployeeRequestDto employeeRequest, string email, string password )
         {
             employee.Address = employeeRequest.Address;
             employee.PhoneNumber = employeeRequest.PhoneNumber;
             employee.EmployeeName = employeeRequest.EmployeeName;
-            employee.EmployeePasscode.Passcode = passcode;
+
+            // Update the email
+            employee.AppUser.Email = email;
+
+            // Hash the password and update it
+            PasswordHasher<AppUser> passwordHasher = new PasswordHasher<AppUser>();
+            employee.AppUser.PasswordHash = passwordHasher.HashPassword(new AppUser(), password);
         }
 
         // Method to update or add an image

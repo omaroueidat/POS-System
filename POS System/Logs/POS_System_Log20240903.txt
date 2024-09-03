@@ -1,0 +1,507 @@
+2024-09-03 14:35:37.285 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 14:35:38.915 +03:00 [INF] Now listening on: https://localhost:7156
+2024-09-03 14:35:38.918 +03:00 [INF] Now listening on: http://localhost:5291
+2024-09-03 14:35:38.925 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-03 14:35:38.950 +03:00 [INF] Hosting environment: Development
+2024-09-03 14:35:38.971 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-09-03 14:35:41.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger - null null
+2024-09-03 14:35:41.967 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger - 301 0 null 733.1865ms
+2024-09-03 14:35:41.993 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 14:35:42.354 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui.css - null null
+2024-09-03 14:35:42.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui-bundle.js - null null
+2024-09-03 14:35:42.360 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-03 14:35:42.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 368.5985ms
+2024-09-03 14:35:42.400 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 14:35:42.437 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 36.6151ms
+2024-09-03 14:35:42.473 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-03 14:35:42.465 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-03 14:35:42.495 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 135.0307ms
+2024-09-03 14:35:42.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui.css - 200 143943 text/css 147.5149ms
+2024-09-03 14:35:42.557 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 14:35:42.644 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-03 14:35:42.656 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 297.365ms
+2024-09-03 14:35:42.903 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 345.9609ms
+2024-09-03 14:35:43.185 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 14:35:43.728 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 543.1118ms
+2024-09-03 14:39:04.583 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Login - application/json 57
+2024-09-03 14:39:04.829 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System)'
+2024-09-03 14:39:04.887 +03:00 [INF] Route matched with {action = "Login", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Login.AppUserLogin) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 14:39:12.305 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-03 14:39:17.609 +03:00 [INF] Executed DbCommand (71ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-03 14:39:19.610 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__appUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[AdminId], [a].[AppUserId]
+FROM [Admin] AS [a]
+WHERE [a].[AppUserId] = @__appUserId_0
+2024-09-03 14:39:24.291 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Login.AdminLoginResponseDto'.
+2024-09-03 14:39:24.346 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System) in 19413.7781ms
+2024-09-03 14:39:24.423 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System)'
+2024-09-03 14:39:24.453 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Login - 200 null application/json; charset=utf-8 19869.8143ms
+2024-09-03 14:51:22.826 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 14:51:22.942 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-09-03 14:51:23.299 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+2024-09-03 14:51:23.304 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 14:51:23.318 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 14:52:09.489 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Security.Claims.Claim, System.Security.Claims, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2024-09-03 14:52:09.517 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 46193.7659ms
+2024-09-03 14:52:09.532 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 14:52:09.553 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 200 null application/json; charset=utf-8 46727.5623ms
+2024-09-03 14:52:10.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 14:52:10.632 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 51.9671ms
+2024-09-03 14:52:10.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 14:52:10.751 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 14:52:10.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 12.6297ms
+2024-09-03 14:52:10.769 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.7248ms
+2024-09-03 14:52:11.123 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 14:52:11.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.4831ms
+2024-09-03 14:52:12.738 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/favicon-32x32.png - null null
+2024-09-03 14:52:12.745 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-03 14:52:12.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/favicon-32x32.png - 200 628 image/png 11.9162ms
+2024-09-03 14:56:22.003 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 14:56:22.784 +03:00 [INF] Now listening on: https://localhost:7156
+2024-09-03 14:56:22.787 +03:00 [INF] Now listening on: http://localhost:5291
+2024-09-03 14:56:22.793 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-03 14:56:22.796 +03:00 [INF] Hosting environment: Development
+2024-09-03 14:56:22.798 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-09-03 14:56:24.123 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 14:56:25.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 1182.5009ms
+2024-09-03 14:56:25.624 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 14:56:25.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 14:56:26.174 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 550.3477ms
+2024-09-03 14:56:26.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 406.6962ms
+2024-09-03 14:56:29.634 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 14:56:30.209 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-09-03 14:56:30.413 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+2024-09-03 14:56:30.425 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 14:56:30.506 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 14:56:40.586 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Security.Claims.Claim, System.Security.Claims, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2024-09-03 14:56:40.595 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 14:56:40.629 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 10094.6445ms
+2024-09-03 14:56:40.649 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 14:56:40.655 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 200 null application/json; charset=utf-8 11021.7719ms
+2024-09-03 14:56:40.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 355.5669ms
+2024-09-03 15:10:43.768 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 15:10:44.845 +03:00 [INF] Now listening on: https://localhost:7156
+2024-09-03 15:10:44.849 +03:00 [INF] Now listening on: http://localhost:5291
+2024-09-03 15:10:44.855 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-03 15:10:44.858 +03:00 [INF] Hosting environment: Development
+2024-09-03 15:10:44.860 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-09-03 15:10:46.354 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 15:10:47.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 810.5275ms
+2024-09-03 15:10:47.328 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 15:10:47.351 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 23.8554ms
+2024-09-03 15:10:47.879 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 15:10:47.984 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.4009ms
+2024-09-03 15:10:54.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 15:10:54.759 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 367.8694ms
+2024-09-03 15:10:58.502 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 15:11:02.323 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-09-03 15:11:03.243 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+2024-09-03 15:11:03.258 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:11:03.342 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:11:12.469 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Security.Claims.Claim, System.Security.Claims, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2024-09-03 15:11:12.543 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 9178.995ms
+2024-09-03 15:11:12.553 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:11:12.560 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 200 null application/json; charset=utf-8 14057.8286ms
+2024-09-03 15:11:22.648 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Login - application/json 57
+2024-09-03 15:11:22.661 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System)'
+2024-09-03 15:11:22.695 +03:00 [INF] Route matched with {action = "Login", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Login.AppUserLogin) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:11:36.229 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-03 15:11:41.876 +03:00 [INF] Executed DbCommand (197ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-03 15:11:42.199 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__appUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[AdminId], [a].[AppUserId]
+FROM [Admin] AS [a]
+WHERE [a].[AppUserId] = @__appUserId_0
+2024-09-03 15:11:42.291 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Login.AdminLoginResponseDto'.
+2024-09-03 15:11:42.297 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System) in 19597.117ms
+2024-09-03 15:11:42.303 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System)'
+2024-09-03 15:11:42.332 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Login - 200 null application/json; charset=utf-8 19683.8887ms
+2024-09-03 15:12:03.135 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 15:12:03.189 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:12:03.208 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:12:18.955 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Security.Claims.Claim, System.Security.Claims, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2024-09-03 15:12:18.980 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 15762.4836ms
+2024-09-03 15:12:18.987 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:12:19.087 +03:00 [ERR] 9e45173c-49f1-4931-9880-5e47ff1031a2 : A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Issuer.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Issuer.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2024-09-03 15:12:19.690 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 500 null application/json; charset=utf-8 16554.2033ms
+2024-09-03 15:18:37.259 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 15:18:37.979 +03:00 [INF] Now listening on: https://localhost:7156
+2024-09-03 15:18:37.982 +03:00 [INF] Now listening on: http://localhost:5291
+2024-09-03 15:18:37.988 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-03 15:18:37.990 +03:00 [INF] Hosting environment: Development
+2024-09-03 15:18:37.993 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-09-03 15:18:39.696 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 15:18:40.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 797.9152ms
+2024-09-03 15:18:40.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 15:18:40.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 15:18:40.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 34.2347ms
+2024-09-03 15:18:40.719 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.411ms
+2024-09-03 15:18:40.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 15:18:41.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 465.6287ms
+2024-09-03 15:18:56.664 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Login - application/json 57
+2024-09-03 15:18:56.993 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System)'
+2024-09-03 15:18:57.061 +03:00 [INF] Route matched with {action = "Login", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Login.AppUserLogin) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:18:59.664 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-03 15:19:01.765 +03:00 [INF] Executed DbCommand (129ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-03 15:19:02.170 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__appUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[AdminId], [a].[AppUserId]
+FROM [Admin] AS [a]
+WHERE [a].[AppUserId] = @__appUserId_0
+2024-09-03 15:19:02.308 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Login.AdminLoginResponseDto'.
+2024-09-03 15:19:02.330 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System) in 5255.9995ms
+2024-09-03 15:19:02.335 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Login (POS System)'
+2024-09-03 15:19:02.365 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Login - 200 null application/json; charset=utf-8 5701.7917ms
+2024-09-03 15:19:18.717 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 15:19:18.802 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:19:18.812 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:20:06.437 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Security.Claims.Claim, System.Security.Claims, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]'.
+2024-09-03 15:20:06.466 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 47650.9274ms
+2024-09-03 15:20:06.469 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:20:06.534 +03:00 [ERR] 3abb7c02-0433-499c-a7ad-5214ed63412b : A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Issuer.
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Subject.Claims.Issuer.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.ListOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at POS_System.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2024-09-03 15:20:06.693 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 500 null application/json; charset=utf-8 47975.6708ms
+2024-09-03 15:21:55.819 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 15:21:56.456 +03:00 [INF] Now listening on: https://localhost:7156
+2024-09-03 15:21:56.461 +03:00 [INF] Now listening on: http://localhost:5291
+2024-09-03 15:21:56.470 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-03 15:21:56.472 +03:00 [INF] Hosting environment: Development
+2024-09-03 15:21:56.476 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-09-03 15:21:58.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 15:21:58.820 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 781.3169ms
+2024-09-03 15:21:58.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 15:21:58.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 15:21:58.955 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 64.4739ms
+2024-09-03 15:21:59.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 253.4988ms
+2024-09-03 15:21:59.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 15:21:59.690 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 405.301ms
+2024-09-03 15:22:07.755 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 15:22:08.356 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:22:08.423 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:22:11.947 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-03 15:22:11.967 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 3526.2449ms
+2024-09-03 15:22:11.970 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:22:11.978 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 200 null text/plain; charset=utf-8 4223.8445ms
+2024-09-03 15:22:43.774 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-09-03 15:22:43.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 136.9739ms
+2024-09-03 15:22:44.134 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 15:22:44.140 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-09-03 15:22:44.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 392.6041ms
+2024-09-03 15:22:44.579 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 438.9658ms
+2024-09-03 15:22:44.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-09-03 15:22:44.763 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.5815ms
+2024-09-03 15:22:48.680 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 15:22:48.713 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:22:48.726 +03:00 [INF] Route matched with {action = "Register", controller = "AdminAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Entities.DTO.Request.AppUserRequest) on controller POS_System.Controllers.Auth_Controllers.AdminAuthController (POS System).
+2024-09-03 15:22:54.018 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-03 15:22:54.022 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System) in 5291.5625ms
+2024-09-03 15:22:54.027 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.AdminAuthController.Register (POS System)'
+2024-09-03 15:22:54.032 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 200 null text/plain; charset=utf-8 5351.6692ms
+2024-09-03 15:23:04.434 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/SuperMarketAuth/Login - application/json 55
+2024-09-03 15:23:04.470 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.SuperMarketAuthController.Login (POS System)'
+2024-09-03 15:23:04.483 +03:00 [INF] Route matched with {action = "Login", controller = "SuperMarketAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Login.AppUserLogin) on controller POS_System.Controllers.Auth_Controllers.SuperMarketAuthController (POS System).
+2024-09-03 15:23:06.712 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-03 15:23:08.504 +03:00 [INF] Executed DbCommand (119ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-03 15:23:08.843 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__appUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[SuperMarketId], [s].[Address], [s].[AppUserId], [s].[PhoneNumber], [s].[SupermarketName]
+FROM [SuperMarket] AS [s]
+WHERE [s].[AppUserId] = @__appUserId_0
+2024-09-03 15:23:08.923 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Login.SuperMarketLoginResponseDto'.
+2024-09-03 15:23:08.933 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.SuperMarketAuthController.Login (POS System) in 4440.4018ms
+2024-09-03 15:23:08.939 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.SuperMarketAuthController.Login (POS System)'
+2024-09-03 15:23:08.971 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/SuperMarketAuth/Login - 200 null application/json; charset=utf-8 4536.5364ms
+2024-09-03 15:23:28.472 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/Employee - null 0
+2024-09-03 15:23:28.490 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.CreateNewEmployee (POS System)'
+2024-09-03 15:23:28.504 +03:00 [INF] Route matched with {action = "CreateNewEmployee", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNewEmployee(Entities.DTO.Request.EmployeeRequestDto, Microsoft.AspNetCore.Http.IFormFile) on controller POS_System.Controllers.EmployeeController (POS System).
+2024-09-03 15:23:28.521 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-09-03 15:23:28.554 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.CreateNewEmployee (POS System) in 44.2785ms
+2024-09-03 15:23:28.557 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.CreateNewEmployee (POS System)'
+2024-09-03 15:23:28.566 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/Employee - 415 null application/problem+json; charset=utf-8 93.8602ms
+2024-09-03 15:23:38.775 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/Employee - null null
+2024-09-03 15:23:38.785 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-09-03 15:23:38.795 +03:00 [INF] Route matched with {action = "GetEmployeesOfSupermarket", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesOfSupermarket() on controller POS_System.Controllers.EmployeeController (POS System).
+2024-09-03 15:23:38.910 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__superMarketId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Address], [e].[AppUserId], [e].[EmployeeImage], [e].[EmployeeName], [e].[PhoneNumber], [e].[SupermarketId]
+FROM [Employee] AS [e]
+WHERE [e].[SupermarketId] = @__superMarketId_0
+2024-09-03 15:23:38.993 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DTO.Response.EmployeeResponseDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 15:23:39.007 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System) in 207.5134ms
+2024-09-03 15:23:39.027 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-09-03 15:23:39.032 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/Employee - 200 null application/json; charset=utf-8 257.3262ms
+2024-09-03 15:23:53.935 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - application/json 119
+2024-09-03 15:23:53.949 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-09-03 15:23:53.957 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2024-09-03 15:23:53.960 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/AdminAuth/Register - 403 0 null 25.2194ms
+2024-09-03 15:24:24.665 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/Employee - null null
+2024-09-03 15:24:24.684 +03:00 [INF] Executing endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-09-03 15:24:24.689 +03:00 [INF] Route matched with {action = "GetEmployeesOfSupermarket", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployeesOfSupermarket() on controller POS_System.Controllers.EmployeeController (POS System).
+2024-09-03 15:24:24.731 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__superMarketId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Address], [e].[AppUserId], [e].[EmployeeImage], [e].[EmployeeName], [e].[PhoneNumber], [e].[SupermarketId]
+FROM [Employee] AS [e]
+WHERE [e].[SupermarketId] = @__superMarketId_0
+2024-09-03 15:24:24.745 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DTO.Response.EmployeeResponseDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 15:24:24.748 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System) in 53.5955ms
+2024-09-03 15:24:24.759 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
+2024-09-03 15:24:24.763 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/Employee - 200 null application/json; charset=utf-8 97.6556ms
+2024-09-03 15:24:49.396 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/Employee - null null
+2024-09-03 15:24:49.415 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperMarket)
+2024-09-03 15:24:49.418 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2024-09-03 15:24:49.421 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/Employee - 403 0 null 24.5179ms

@@ -23,7 +23,5 @@ namespace Entities.DTO.Response
 
         // For Navigation 
         public List<EmployeeLog>? EmployeeLogs { get; set; }
-
-        public EmployeePasscode? EmployeePasscode { get; set; }
     }
 }

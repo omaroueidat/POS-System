@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Entities.Domain.Application;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ namespace Entities.Models.EmployeeModels
     {
         [Key]
         public Guid EmployeeId { get; set; }
+        public Guid AppUserId { get; set; }
 
         public Guid SupermarketId { get; set; }
 
@@ -28,6 +31,7 @@ namespace Entities.Models.EmployeeModels
         // For Navigation 
         public virtual List<EmployeeLog>? EmployeeLogs { get; set; }
 
-        public virtual EmployeePasscode? EmployeePasscode { get; set; }
+        [ForeignKey("AppUserId")]
+        public virtual AppUser? AppUser { get; set; }
     }
 }

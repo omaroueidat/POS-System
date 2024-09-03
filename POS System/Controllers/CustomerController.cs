@@ -1,4 +1,5 @@
 ﻿using Entities.DTO.Request;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
@@ -6,6 +7,7 @@ using POS_System.CustomActionFilters;
 using POS_System.Dummy_Data;
 using Services.Interfaces;
 using System.Runtime.InteropServices;
+using System.Security.Claims;
 
 namespace POS_System.Controllers
 {
@@ -20,9 +22,19 @@ namespace POS_System.Controllers
             _customerService = customerService;
         }
 
-        [HttpGet("{superMarketId:Guid}")]
-        public async Task<IActionResult> GetAllCustomersOfSuperMarket(Guid superMarketId)
+        [Authorize(Roles = "SuperMarket")]
+        [HttpGet]
+        public async Task<IActionResult> GetAllCustomersOfSuperMarket()
         {
+            // Get the Id of the SuperMarket from the jwt token
+            var authoriedSuperMarketId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Convert the Id into Guid
+            if (!Guid.TryParse(authoriedSuperMarketId, out var superMarketId))
+            {
+                return Forbid();
+            }
+
             var customerResponses = await _customerService.GetAllCustomers(superMarketId);
 
             if (customerResponses is null)
@@ -33,9 +45,20 @@ namespace POS_System.Controllers
             return Ok(customerResponses);
         }
 
+        
         [HttpGet("{customerId:Guid}")]
-        public async Task<IActionResult> GetCustomer(Guid customerId, Guid superMarketId)
+        [Authorize(Roles = "SuperMarket")]
+        public async Task<IActionResult> GetCustomer(Guid customerId)
         {
+            // Get the SueprMarket id
+            var authoriedSuperMarketId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Convert the Id into Guid
+            if (!Guid.TryParse(authoriedSuperMarketId, out var superMarketId))
+            {
+                return Forbid();
+            }
+
             var customerResponse = await _customerService.GetCustomer(customerId, superMarketId);
 
             if (customerResponse is null)
@@ -47,7 +70,8 @@ namespace POS_System.Controllers
         }
 
         [HttpPost]
-        [ValidateModel] // for model attributes validatrion
+        [ValidateModel] // for model attributes validation
+        [Authorize(Roles = "SuperMarket")]
         public async Task<IActionResult> AddNewCustomer(CustomerRequestDto customerRequest)
         {
             var customerResponse = await _customerService.AddNewCustomer(customerRequest);

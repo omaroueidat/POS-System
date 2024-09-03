@@ -1,16 +1,10 @@
 [
     {
-        "Id": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
-        "SupermarketName": "SuperMart Downtown",
+        "SuperMarketId": "5F2CFD7A-F135-4DAD-9EBD-97014F203791",
+        "AppUserId": "57C34BC4-A4D5-4124-8F95-DB13978FBEAB",
+        "SupermarketName": "Tawfeer",
         "SupermarketAddress": "100 Downtown St",
         "CreatedAt": "2024-08-01T08:00:00",
         "UpdatedAt": "2024-08-01T08:00:00"
-    },
-    {
-        "Id": "5F2CFD7A-F135-4DAD-9EBD-97014F203792",
-        "SupermarketName": "SuperMart Uptown",
-        "SupermarketAddress": "200 Uptown Ave",
-        "CreatedAt": "2024-08-02T09:00:00",
-        "UpdatedAt": "2024-08-02T09:00:00"
     }
 ]

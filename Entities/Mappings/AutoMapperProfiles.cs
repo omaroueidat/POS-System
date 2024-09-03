@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Entities.DTO.Register;
 using Entities.DTO.Request;
 using Entities.DTO.Response;
 using Entities.Models.CustomerModels;
@@ -19,13 +20,12 @@ namespace Entities.Mappings
         {
             CreateMap<SuperMarketRequestDto, SuperMarket>().ReverseMap();
             CreateMap<SuperMarket, SuperMarketResponseDto>().ReverseMap();
-            // Mapping from the SuperMarketLoginRequest to SuperMarket to use it in Login
-            CreateMap<SuperMarketLoginRequest, SuperMarket>();
+            CreateMap<SuperMarketRequestDto, SuperMarketRegisterDto>().ReverseMap();
 
             // Maps for Employee
             CreateMap<EmployeeRequestDto, Employee>().ReverseMap();
             CreateMap<Employee, EmployeeResponseDto>().ReverseMap();
-            CreateMap<EmployeeLoginRequest, Employee>();
+            CreateMap<EmployeeRequestDto, EmployeeRegisterDto>().ReverseMap();
 
             // Mapping for the Customer
             CreateMap<CustomerRequestDto, Customer>().ReverseMap();

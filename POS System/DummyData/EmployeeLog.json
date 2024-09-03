@@ -4,59 +4,5 @@
         "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AA",
         "LoginDate": "08-01-2024",
         "LogoutDate": "08-01-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86BB",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AB",
-        "LoginDate": "08-02-2024",
-        "LogoutDate": "08-02-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86BC",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AC",
-        "LoginDate": "08-03-2024",
-        "LogoutDate": "08-03-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86BD",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AD",
-        "LoginDate": "08-04-2024",
-        "LogoutDate": "08-04-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86BE",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AE",
-        "LoginDate": "08-05-2024",
-        "LogoutDate": "08-05-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86BF",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86AF",
-        "LoginDate": "08-06-2024",
-        "LogoutDate": "08-06-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86B1",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A1",
-        "LoginDate": "08-07-2024",
-        "LogoutDate": "08-07-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86B2",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A2",
-        "LoginDate": "08-08-2024",
-        "LogoutDate": "08-08-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86B3",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A3",
-        "LoginDate": "08-09-2024",
-        "LogoutDate": "08-09-2024"
-    },
-    {
-        "EmployeeLogId": "536D010D-465C-4C4B-84E9-18D5DF4D86B4",
-        "EmployeeId": "536D010D-465C-4C4B-84E9-18D5DF4D86A4",
-        "LoginDate": "08-10-2024",
-        "LogoutDate": "08-10-2024"
     }
 ]

@@ -25,27 +25,27 @@
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4D",
         "Quantity": 180,
         "UpdatedAt": "2024-08-04T13:00:00",
-        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203792"
+        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203791"
     },
     {
         "StockId": "5983CB43-1364-4227-BBF0-0C6ADE03BD8E",
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4E",
         "Quantity": 120,
         "UpdatedAt": "2024-08-05T14:00:00",
-        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203792"
+        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203791"
     },
     {
         "StockId": "5983CB43-1364-4227-BBF0-0C6ADE03BD8F",
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD4F",
         "Quantity": 90,
         "UpdatedAt": "2024-08-06T15:00:00",
-        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203792"
+        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203791"
     },
     {
         "StockId": "5983CB43-1364-4227-BBF0-0C6ADE03BD81",
         "ProductId": "D37D22D5-BA61-4D70-BA0C-B7ADFF04CD41",
         "Quantity": 80,
         "UpdatedAt": "2024-08-07T16:00:00",
-        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203792"
+        "SuperMarketId" : "5F2CFD7A-F135-4DAD-9EBD-97014F203791"
     }
 ]

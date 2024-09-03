@@ -20,7 +20,7 @@ namespace POS_System.Controllers
         }
 
         [HttpGet]
-        [Authorize()] // the user should be logged in as a supermarket to access this method
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllSuperMarkets()
         {
 
@@ -30,7 +30,7 @@ namespace POS_System.Controllers
         }
 
         [HttpGet("{superMarketId:guid}")]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetSuperMarket(Guid superMarketId)
         {
             var superMarket = await _superMarketService.GetSuperMarket(superMarketId);
@@ -45,7 +45,7 @@ namespace POS_System.Controllers
 
         [HttpPost]
         [ValidateModel] // for model attribute validations
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AddNewSuperMarket(SuperMarketRequestDto superMarketRequest)
         {
             var superMarket = await _superMarketService.CreateNewSupermarket(superMarketRequest);
@@ -60,10 +60,10 @@ namespace POS_System.Controllers
 
         [HttpPut("{superMarketId:guid}")]
         [ValidateModel]
-        [Authorize]
-        public async Task<IActionResult> UpdateSuperMarket(SuperMarketRequestDto superMarketRequest, Guid superMarketId)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> UpdateSuperMarket(SuperMarketRequestDto superMarketRequest, Guid superMarketId, string email, string password)
         {
-            bool isUpdated = await _superMarketService.UpdateSupermarket(superMarketRequest, superMarketId);
+            bool isUpdated = await _superMarketService.UpdateSupermarket(superMarketRequest, superMarketId, email, password);
 
             if (!isUpdated)
             {
@@ -74,7 +74,7 @@ namespace POS_System.Controllers
         }
 
         [HttpDelete("{superMarketId:guid}")]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteSuperMarket(Guid superMarketId)
         {
             bool isDeleted = await _superMarketService.DeleteSupermarket(superMarketId);

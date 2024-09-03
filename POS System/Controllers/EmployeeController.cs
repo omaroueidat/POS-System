@@ -22,9 +22,9 @@ namespace POS_System.Controllers
 
         // Changing the Endpoint to take the Id from the jwt token instead of passing it through the url
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "SuperMarket")]
         public async Task<IActionResult> GetEmployeesOfSupermarket()
-        { 
+        {
             // Get the Id of the logged in SuperMarket
             var authorizedSuperMarketId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
@@ -46,24 +46,31 @@ namespace POS_System.Controllers
 
         [HttpPost]
         [ValidateModel]
-        [Authorize]
+        [Authorize(Roles = "SuperMarket")]
         public async Task<IActionResult> CreateNewEmployee(EmployeeRequestDto employeeRequest, IFormFile image)
         {
+            // Get the supermarket Id that is adding the employee
+            var authroizedSuperMarketId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (!Guid.TryParse(authroizedSuperMarketId, out var superMarketId))
+            {
+                return Unauthorized();
+            }
+
             var imageExtension = Path.GetExtension(image.FileName);
 
             if (!imageExtension.Contains("jpeg") || !imageExtension.Contains("jpg"))
             {
-                return Problem("The Image should have extension jpeg or jpg!",null,400);
+                return Problem("The Image should have extension jpeg or jpg!", null, 400);
             }
 
-            var employee = await _employeeService.AddNewEmployee(employeeRequest, image);
+            var employee = await _employeeService.AddNewEmployee(employeeRequest, image, superMarketId);
 
-            return CreatedAtAction(nameof(EmployeeController.GetEmployee),employee);
+            return CreatedAtAction(nameof(EmployeeController.GetEmployee), employee);
         }
 
-        [HttpGet]
-        [Authorize]
-        [Route("[action]/{employeeId:guid}")]
+        [HttpGet("{employeeId:guid}")]
+        [Authorize(Roles = "SuperMarket")]
         public async Task<IActionResult> GetEmployee(Guid employeeId)
         {
             var employee = await _employeeService.GetEmployee(employeeId);
@@ -72,8 +79,8 @@ namespace POS_System.Controllers
         }
 
         [HttpPost("{employeeId:guid}")]
-        [Authorize]
-        public async Task<IActionResult> UpdateEmployee(Guid employeeId, EmployeeRequestDto employeeRequest, int passcode, IFormFile image)
+        [Authorize(Roles = "SuperMarket")]
+        public async Task<IActionResult> UpdateEmployee(Guid employeeId, EmployeeRequestDto employeeRequest, IFormFile image, string email, string password)
         {
             var imageExtension = Path.GetExtension(image.FileName);
 
@@ -82,13 +89,13 @@ namespace POS_System.Controllers
                 return Problem("The Image should have extension jpeg or jpg!", null, 400);
             }
 
-            await _employeeService.UpdateEmployee(employeeId, employeeRequest, passcode, image);
+            await _employeeService.UpdateEmployee(employeeId, employeeRequest, image, email, password);
 
             return Ok();
         }
 
         [HttpDelete("{employeeId:guid}")]
-        [Authorize]
+        [Authorize(Roles = "SuperMarket")]
         public async Task<IActionResult> DeleteEmployee(Guid employeeId)
         {
             bool isDeleted = await _employeeService.DeleteEmployee(employeeId);
@@ -101,7 +108,8 @@ namespace POS_System.Controllers
             return Ok();
         }
 
-        [HttpGet]
+        [HttpGet("image")]
+        [Authorize(Roles = "SuperMarket, Admin, Employee")]
         public IActionResult GetEmployeeImage(string imageUrl)
         {
             if (!System.IO.File.Exists(imageUrl))

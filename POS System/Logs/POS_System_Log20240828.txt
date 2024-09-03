@@ -1,0 +1,1250 @@
+2024-08-28 13:47:34.187 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 13:47:34.985 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:00:12.175 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:00:12.799 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:01:31.475 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:01:32.486 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:01:32.548 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:01:32.559 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:01:32.574 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:01:32.612 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:01:32.639 +03:00 [INF] Applying migration '20240828110014_Adding-Authentication-Database-Schema'.
+2024-08-28 14:01:32.923 +03:00 [ERR] Failed executing DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX [IX_SuperMarket_AppUserId] ON [SuperMarket];
+2024-08-28 14:02:00.688 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:02:01.347 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:02:03.076 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:02:03.117 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:02:03.144 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:02:34.633 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:02:35.403 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:02:36.966 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:02:37.015 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:02:37.038 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:02:51.262 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:02:52.194 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:03:29.864 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:03:30.788 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:03:30.831 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:03:30.836 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:03:30.837 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:03:30.869 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:03:30.901 +03:00 [INF] Applying migration '20240828110253_Adding-Authentication-Database-Schema'.
+2024-08-28 14:05:45.179 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:05:46.029 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:06:15.261 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:06:16.838 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:06:17.605 +03:00 [INF] Executed DbCommand (608ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [POS_System];
+2024-08-28 14:06:17.734 +03:00 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [POS_System] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2024-08-28 14:06:17.785 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:06:17.951 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-08-28 14:06:17.954 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:06:17.985 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:06:17.995 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:06:18.026 +03:00 [INF] Applying migration '20240828110547_Database-Rework-Adding-Authentication-Database-Schema'.
+2024-08-28 14:06:18.391 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-08-28 14:06:18.396 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-08-28 14:06:18.403 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Category] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [CategoryName] nvarchar(max) NULL,
+    [CategoryImage] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([CategoryId])
+);
+2024-08-28 14:06:18.406 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customer] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [CustomerName] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    [CustomerAddress] nvarchar(max) NULL,
+    CONSTRAINT [PK_Customer] PRIMARY KEY ([CustomerId])
+);
+2024-08-28 14:06:18.417 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:18.462 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admin] (
+    [AdminId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Admin] PRIMARY KEY ([AdminId]),
+    CONSTRAINT [FK_Admin_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:18.467 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:18.481 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:18.485 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:19.971 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:19.976 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SuperMarket] (
+    [SuperMarketId] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_SuperMarket] PRIMARY KEY ([SuperMarketId]),
+    CONSTRAINT [FK_SuperMarket_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:06:19.979 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [ProductCode] bigint NOT NULL,
+    [Price] real NOT NULL,
+    [Cost] real NOT NULL,
+    [Discount] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ManDate] datetime2 NOT NULL,
+    [ExpDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Product_Category_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Category] ([CategoryId]) ON DELETE CASCADE
+);
+2024-08-28 14:06:21.150 +03:00 [ERR] Failed executing DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employee] (
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketId] uniqueidentifier NOT NULL,
+    [EmployeeName] nvarchar(30) NULL,
+    [EmployeeImage] nvarchar(max) NULL,
+    [Address] nvarchar(40) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_Employee] PRIMARY KEY ([EmployeeId]),
+    CONSTRAINT [FK_Employee_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employee_SuperMarket_SupermarketId] FOREIGN KEY ([SupermarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:22:28.901 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:22:29.916 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:23:17.235 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:23:18.212 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:23:50.832 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:23:52.093 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:23:52.192 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:23:52.202 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:23:52.204 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:23:52.238 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:23:52.259 +03:00 [INF] Applying migration '20240828112319_Database-Rework-Adding-Authentication-Database-Schema'.
+2024-08-28 14:23:52.612 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-08-28 14:23:52.621 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-08-28 14:23:52.624 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Category] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [CategoryName] nvarchar(max) NULL,
+    [CategoryImage] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([CategoryId])
+);
+2024-08-28 14:23:52.626 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customer] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [CustomerName] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    [CustomerAddress] nvarchar(max) NULL,
+    CONSTRAINT [PK_Customer] PRIMARY KEY ([CustomerId])
+);
+2024-08-28 14:23:52.630 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:52.759 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admin] (
+    [AdminId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Admin] PRIMARY KEY ([AdminId]),
+    CONSTRAINT [FK_Admin_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:52.789 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:52.795 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:52.801 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:54.293 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:54.306 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SuperMarket] (
+    [SuperMarketId] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_SuperMarket] PRIMARY KEY ([SuperMarketId]),
+    CONSTRAINT [FK_SuperMarket_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:23:54.311 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [ProductCode] bigint NOT NULL,
+    [Price] real NOT NULL,
+    [Cost] real NOT NULL,
+    [Discount] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ManDate] datetime2 NOT NULL,
+    [ExpDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Product_Category_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Category] ([CategoryId]) ON DELETE CASCADE
+);
+2024-08-28 14:23:55.354 +03:00 [ERR] Failed executing DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employee] (
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketId] uniqueidentifier NOT NULL,
+    [EmployeeName] nvarchar(30) NULL,
+    [EmployeeImage] nvarchar(max) NULL,
+    [Address] nvarchar(40) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_Employee] PRIMARY KEY ([EmployeeId]),
+    CONSTRAINT [FK_Employee_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employee_SuperMarket_SupermarketId] FOREIGN KEY ([SupermarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:35:27.992 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:35:28.713 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:35:50.122 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:35:51.131 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:35:51.229 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:35:51.235 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:35:51.237 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:35:51.269 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:35:51.297 +03:00 [INF] Applying migration '20240828113529_Database-Rework-Adding-Authentication-Database-Schema'.
+2024-08-28 14:35:51.716 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-08-28 14:35:51.722 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-08-28 14:35:51.727 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Category] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [CategoryName] nvarchar(max) NULL,
+    [CategoryImage] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([CategoryId])
+);
+2024-08-28 14:35:51.731 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customer] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [CustomerName] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    [CustomerAddress] nvarchar(max) NULL,
+    CONSTRAINT [PK_Customer] PRIMARY KEY ([CustomerId])
+);
+2024-08-28 14:35:51.736 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:51.902 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admin] (
+    [AdminId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Admin] PRIMARY KEY ([AdminId]),
+    CONSTRAINT [FK_Admin_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:51.960 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:51.997 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:52.003 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:53.338 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:53.343 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SuperMarket] (
+    [SuperMarketId] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_SuperMarket] PRIMARY KEY ([SuperMarketId]),
+    CONSTRAINT [FK_SuperMarket_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:35:53.353 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [ProductCode] bigint NOT NULL,
+    [Price] real NOT NULL,
+    [Cost] real NOT NULL,
+    [Discount] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ManDate] datetime2 NOT NULL,
+    [ExpDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Product_Category_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Category] ([CategoryId]) ON DELETE CASCADE
+);
+2024-08-28 14:35:54.456 +03:00 [ERR] Failed executing DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employee] (
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketId] uniqueidentifier NOT NULL,
+    [EmployeeName] nvarchar(30) NULL,
+    [EmployeeImage] nvarchar(max) NULL,
+    [Address] nvarchar(40) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_Employee] PRIMARY KEY ([EmployeeId]),
+    CONSTRAINT [FK_Employee_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employee_SuperMarket_SupermarketId] FOREIGN KEY ([SupermarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:37:47.905 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:37:49.101 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:38:59.795 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:39:00.788 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:39:00.842 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:39:00.855 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:39:00.864 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:39:00.927 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:39:00.959 +03:00 [INF] Applying migration '20240828113751_Database-Rework-Adding-Authentication-Database-Schema'.
+2024-08-28 14:39:01.453 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-08-28 14:39:01.459 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-08-28 14:39:01.464 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Category] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [CategoryName] nvarchar(max) NULL,
+    [CategoryImage] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([CategoryId])
+);
+2024-08-28 14:39:01.469 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customer] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [CustomerName] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    [CustomerAddress] nvarchar(max) NULL,
+    CONSTRAINT [PK_Customer] PRIMARY KEY ([CustomerId])
+);
+2024-08-28 14:39:01.473 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:39:01.608 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admin] (
+    [AdminId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Admin] PRIMARY KEY ([AdminId]),
+    CONSTRAINT [FK_Admin_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:39:01.618 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:39:01.633 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:39:01.637 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:39:03.015 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:39:03.023 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SuperMarket] (
+    [SuperMarketId] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_SuperMarket] PRIMARY KEY ([SuperMarketId]),
+    CONSTRAINT [FK_SuperMarket_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION
+);
+2024-08-28 14:39:03.027 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [ProductCode] bigint NOT NULL,
+    [Price] real NOT NULL,
+    [Cost] real NOT NULL,
+    [Discount] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ManDate] datetime2 NOT NULL,
+    [ExpDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Product_Category_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Category] ([CategoryId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:04.042 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employee] (
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketId] uniqueidentifier NOT NULL,
+    [EmployeeName] nvarchar(30) NULL,
+    [EmployeeImage] nvarchar(max) NULL,
+    [Address] nvarchar(40) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_Employee] PRIMARY KEY ([EmployeeId]),
+    CONSTRAINT [FK_Employee_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Employee_SuperMarket_SupermarketId] FOREIGN KEY ([SupermarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:04.050 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Stock] (
+    [StockId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [SuperMarketId] uniqueidentifier NOT NULL,
+    [Quantity] bigint NOT NULL,
+    CONSTRAINT [PK_Stock] PRIMARY KEY ([StockId]),
+    CONSTRAINT [FK_Stock_Product_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Stock_SuperMarket_SuperMarketId] FOREIGN KEY ([SuperMarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:04.057 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [EmployeeLog] (
+    [EmployeeLogId] uniqueidentifier NOT NULL,
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [LogInDate] datetime2 NOT NULL,
+    [LogOutDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_EmployeeLog] PRIMARY KEY ([EmployeeLogId]),
+    CONSTRAINT [FK_EmployeeLog_Employee_EmployeeId] FOREIGN KEY ([EmployeeId]) REFERENCES [Employee] ([EmployeeId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:05.181 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Invoice] (
+    [InvoiceId] uniqueidentifier NOT NULL,
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [Total] real NOT NULL,
+    CONSTRAINT [PK_Invoice] PRIMARY KEY ([InvoiceId]),
+    CONSTRAINT [FK_Invoice_Employee_EmployeeId] FOREIGN KEY ([EmployeeId]) REFERENCES [Employee] ([EmployeeId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:05.187 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CustomerInvoice] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [InvoiceId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_CustomerInvoice] PRIMARY KEY ([CustomerId], [InvoiceId]),
+    CONSTRAINT [FK_CustomerInvoice_Customer_CustomerId] FOREIGN KEY ([CustomerId]) REFERENCES [Customer] ([CustomerId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_CustomerInvoice_Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:05.195 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [InvoiceDetails] (
+    [InvoiceDetailsId] uniqueidentifier NOT NULL,
+    [InvoiceId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_InvoiceDetails] PRIMARY KEY ([InvoiceDetailsId]),
+    CONSTRAINT [FK_InvoiceDetails_Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_InvoiceDetails_Product_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:05.199 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SalesHistory] (
+    [SalesHistoryId] uniqueidentifier NOT NULL,
+    [InvoiceId] uniqueidentifier NOT NULL,
+    [Profit] real NOT NULL,
+    CONSTRAINT [PK_SalesHistory] PRIMARY KEY ([SalesHistoryId]),
+    CONSTRAINT [FK_SalesHistory_Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId]) ON DELETE CASCADE
+);
+2024-08-28 14:39:06.502 +03:00 [INF] Executed DbCommand (244ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('8bfc83b7-242a-437e-9ad3-eac7f5e1a4b9', NULL, N'Admin', N'ADMIN'),
+('8f41e34d-65d9-4655-ab3b-c4c81d33250d', NULL, N'SuperMarket', N'SUPERMARKET'),
+('b1214715-9dbb-41aa-8fd7-4033bc2551b3', NULL, N'Employee', N'EMPLOYEE');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-08-28 14:39:06.770 +03:00 [INF] Executed DbCommand (267ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'CategoryImage', N'CategoryName') AND [object_id] = OBJECT_ID(N'[Category]'))
+    SET IDENTITY_INSERT [Category] ON;
+INSERT INTO [Category] ([CategoryId], [CategoryImage], [CategoryName])
+VALUES ('63e2c242-e7c2-4ac1-8545-8c635c2cb97a', NULL, N'Drinks'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97b', NULL, N'Food'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97c', NULL, N'Accessories'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97d', NULL, N'Bakery'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97e', NULL, N'Meat');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'CategoryImage', N'CategoryName') AND [object_id] = OBJECT_ID(N'[Category]'))
+    SET IDENTITY_INSERT [Category] OFF;
+2024-08-28 14:39:07.359 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CustomerId', N'CustomerAddress', N'CustomerName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Customer]'))
+    SET IDENTITY_INSERT [Customer] ON;
+INSERT INTO [Customer] ([CustomerId], [CustomerAddress], [CustomerName], [PhoneNumber])
+VALUES ('0f4d2c4b-3c2a-4d58-962f-8b1a1e5d6d89', N'456 Walnut St, Springfield', N'Rachel Hill', 23457),
+('2b98e616-8e6a-4c4a-8908-7e8f6c6b9f7e', N'456 Willow St, Springfield', N'Frank Harris', 89012),
+('2d7418db-c4e4-44c4-947f-e8dc56f0c517', N'321 Maple St, Springfield', N'Bob Brown', 45678),
+('4f4d08a4-8827-4d65-89a6-0a50f4769fa4', N'654 Cedar St, Springfield', N'Charlie Davis', 56789),
+('5e14a6b8-d89c-4a9b-a57d-d53b6f073b1f', N'987 Oak St, Springfield', N'Paul King', 90123),
+('5e1d1c9c-8f2a-4b0b-bcf7-1c44e5a62e1d', N'456 Oak St, Springfield', N'Jane Smith', 23456),
+('6e8e03c6-8d21-44a3-9f5d-17443477d05f', N'321 Oak St, Springfield', N'Henry Lewis', 12345),
+('7f62de52-2c1e-4a79-9e46-3d2f5e1d8e43', N'789 Maple St, Springfield', N'Grace Clark', 90123),
+('a638dfb5-8a52-4fcf-b9e1-4a732df8a38c', N'654 Pine St, Springfield', N'Ivy Walker', 23456),
+('a8e3c9b1-6c1d-4d78-9d2a-4f5b6c7d8e9f', N'987 Walnut St, Springfield', N'Victor Wood', 67891),
+('adad9f9c-94a7-4a07-9a51-8c5c5c8d80cf', N'789 Walnut St, Springfield', N'Mia Scott', 67890),
+('b1adfce6-5d7c-4c2b-8963-07e2e3c0c4a1', N'123 Birch St, Springfield', N'Quincy Green', 12346),
+('b2e8a3c2-17e5-49b1-b0d9-3a6e7e8f9d1e', N'654 Birch St, Springfield', N'Ursula Morgan', 56780),
+('c4c1d85b-f09e-48a0-8f1e-2b4c1d2f6a2d', N'321 Cedar St, Springfield', N'Tina Lee', 45679),
+('c8f76e8d-1b9e-4d3d-8d58-20b2a0f11a3b', N'987 Birch St, Springfield', N'David Wilson', 67890),
+('d1e6a2f5-0d5a-4d35-835b-623eaf6b3b43', N'123 Elm St, Springfield', N'John Doe', 12345),
+('d6f2a9b1-4381-4ef0-8f9b-1a2e3c4d5b67', N'789 Willow St, Springfield', N'Steve Harris', 34568),
+('df6840f1-517b-4c51-9a4d-b8b9e5b4c59c', N'456 Birch St, Springfield', N'Liam Young', 56789),
+('e0d11f8f-fb26-4b58-9b1b-fb18c8b01a2e', N'789 Pine St, Springfield', N'Alice Johnson', 34567),
+('e4a7d7f5-3196-4cc8-9142-9d5ab0d8a746', N'123 Cedar St, Springfield', N'Kathy Allen', 45678),
+('e9f2b3e7-ff84-4e7b-989d-d582f4a0e1d6', N'654 Maple St, Springfield', N'Olivia Nelson', 89012),
+('f0a7c573-55e8-4db1-b31f-93e7b72d4f1d', N'321 Willow St, Springfield', N'Noah Adams', 78901),
+('f4e5b029-3b58-4a67-b1b6-2d23ac7f69d2', N'123 Walnut St, Springfield', N'Emma Taylor', 78901),
+('fabc3a9d-98b4-4c62-9440-5b1e1caa74a2', N'987 Elm St, Springfield', N'Jack Hall', 34567);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CustomerId', N'CustomerAddress', N'CustomerName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Customer]'))
+    SET IDENTITY_INSERT [Customer] OFF;
+2024-08-28 14:39:07.999 +03:00 [ERR] Failed executing DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'SuperMarketId', N'Address', N'AppUserId', N'PhoneNumber', N'SupermarketName') AND [object_id] = OBJECT_ID(N'[SuperMarket]'))
+    SET IDENTITY_INSERT [SuperMarket] ON;
+INSERT INTO [SuperMarket] ([SuperMarketId], [Address], [AppUserId], [PhoneNumber], [SupermarketName])
+VALUES ('5f2cfd7a-f135-4dad-9ebd-97014f203791', NULL, '57c34bc4-a4d5-4124-8f95-db13978fbeab', 0, N'Tawfeer');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'SuperMarketId', N'Address', N'AppUserId', N'PhoneNumber', N'SupermarketName') AND [object_id] = OBJECT_ID(N'[SuperMarket]'))
+    SET IDENTITY_INSERT [SuperMarket] OFF;
+2024-08-28 14:43:54.536 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:43:55.509 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:44:15.131 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 14:44:16.164 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:44:16.227 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:44:16.232 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-08-28 14:44:16.234 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-08-28 14:44:16.252 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-08-28 14:44:16.271 +03:00 [INF] Applying migration '20240828114356_Database-Rework-Adding-Authentication-Database-Schema'.
+2024-08-28 14:44:16.590 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2024-08-28 14:44:16.593 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] uniqueidentifier NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2024-08-28 14:44:16.596 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Category] (
+    [CategoryId] uniqueidentifier NOT NULL,
+    [CategoryName] nvarchar(max) NULL,
+    [CategoryImage] nvarchar(max) NULL,
+    CONSTRAINT [PK_Category] PRIMARY KEY ([CategoryId])
+);
+2024-08-28 14:44:16.597 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Customer] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [CustomerName] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    [CustomerAddress] nvarchar(max) NULL,
+    CONSTRAINT [PK_Customer] PRIMARY KEY ([CustomerId])
+);
+2024-08-28 14:44:16.600 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:44:16.735 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admin] (
+    [AdminId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Admin] PRIMARY KEY ([AdminId]),
+    CONSTRAINT [FK_Admin_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:44:16.746 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:44:16.770 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:44:16.806 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:44:18.324 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2024-08-28 14:44:18.329 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SuperMarket] (
+    [SuperMarketId] uniqueidentifier NOT NULL DEFAULT (NEWID()),
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketName] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_SuperMarket] PRIMARY KEY ([SuperMarketId]),
+    CONSTRAINT [FK_SuperMarket_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION
+);
+2024-08-28 14:44:18.335 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Product] (
+    [ProductId] uniqueidentifier NOT NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [ProductCode] bigint NOT NULL,
+    [Price] real NOT NULL,
+    [Cost] real NOT NULL,
+    [Discount] decimal(18,2) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [ProductImage] nvarchar(max) NULL,
+    [ManDate] datetime2 NOT NULL,
+    [ExpDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Product] PRIMARY KEY ([ProductId]),
+    CONSTRAINT [FK_Product_Category_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Category] ([CategoryId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:19.548 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Employee] (
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [AppUserId] uniqueidentifier NOT NULL,
+    [SupermarketId] uniqueidentifier NOT NULL,
+    [EmployeeName] nvarchar(30) NULL,
+    [EmployeeImage] nvarchar(max) NULL,
+    [Address] nvarchar(40) NULL,
+    [PhoneNumber] int NOT NULL,
+    CONSTRAINT [PK_Employee] PRIMARY KEY ([EmployeeId]),
+    CONSTRAINT [FK_Employee_AspNetUsers_AppUserId] FOREIGN KEY ([AppUserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Employee_SuperMarket_SupermarketId] FOREIGN KEY ([SupermarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:19.557 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Stock] (
+    [StockId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [SuperMarketId] uniqueidentifier NOT NULL,
+    [Quantity] bigint NOT NULL,
+    CONSTRAINT [PK_Stock] PRIMARY KEY ([StockId]),
+    CONSTRAINT [FK_Stock_Product_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Stock_SuperMarket_SuperMarketId] FOREIGN KEY ([SuperMarketId]) REFERENCES [SuperMarket] ([SuperMarketId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:19.569 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [EmployeeLog] (
+    [EmployeeLogId] uniqueidentifier NOT NULL,
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [LogInDate] datetime2 NOT NULL,
+    [LogOutDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_EmployeeLog] PRIMARY KEY ([EmployeeLogId]),
+    CONSTRAINT [FK_EmployeeLog_Employee_EmployeeId] FOREIGN KEY ([EmployeeId]) REFERENCES [Employee] ([EmployeeId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:20.881 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Invoice] (
+    [InvoiceId] uniqueidentifier NOT NULL,
+    [EmployeeId] uniqueidentifier NOT NULL,
+    [Total] real NOT NULL,
+    CONSTRAINT [PK_Invoice] PRIMARY KEY ([InvoiceId]),
+    CONSTRAINT [FK_Invoice_Employee_EmployeeId] FOREIGN KEY ([EmployeeId]) REFERENCES [Employee] ([EmployeeId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:20.891 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CustomerInvoice] (
+    [CustomerId] uniqueidentifier NOT NULL,
+    [InvoiceId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_CustomerInvoice] PRIMARY KEY ([CustomerId], [InvoiceId]),
+    CONSTRAINT [FK_CustomerInvoice_Customer_CustomerId] FOREIGN KEY ([CustomerId]) REFERENCES [Customer] ([CustomerId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_CustomerInvoice_Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:20.900 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [InvoiceDetails] (
+    [InvoiceDetailsId] uniqueidentifier NOT NULL,
+    [InvoiceId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [Quantity] int NOT NULL,
+    CONSTRAINT [PK_InvoiceDetails] PRIMARY KEY ([InvoiceDetailsId]),
+    CONSTRAINT [FK_InvoiceDetails_Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_InvoiceDetails_Product_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Product] ([ProductId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:20.905 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [SalesHistory] (
+    [SalesHistoryId] uniqueidentifier NOT NULL,
+    [InvoiceId] uniqueidentifier NOT NULL,
+    [Profit] real NOT NULL,
+    CONSTRAINT [PK_SalesHistory] PRIMARY KEY ([SalesHistoryId]),
+    CONSTRAINT [FK_SalesHistory_Invoice_InvoiceId] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice] ([InvoiceId]) ON DELETE CASCADE
+);
+2024-08-28 14:44:22.190 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES ('46cca4c8-81d4-42e6-982e-57cb898f5b8e', NULL, N'Admin', N'ADMIN'),
+('e4dc5f01-2ab8-4f8c-9a05-863e3e061d86', NULL, N'SuperMarket', N'SUPERMARKET'),
+('e9d629cc-af77-4f08-b64a-d64a8f4941ef', NULL, N'Employee', N'EMPLOYEE');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'ConcurrencyStamp', N'Name', N'NormalizedName') AND [object_id] = OBJECT_ID(N'[AspNetRoles]'))
+    SET IDENTITY_INSERT [AspNetRoles] OFF;
+2024-08-28 14:44:22.230 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'Role', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [Role], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES ('57c34bc4-a4d5-4124-8f95-db13978fbeaa', 0, N'059e4329-adac-4fc4-ab8a-38afe8e36409', N'admin@gmail.com', CAST(0 AS bit), CAST(0 AS bit), NULL, N'ADMIN@GMAIL.COM', N'ADMIN', NULL, NULL, CAST(0 AS bit), N'Admin', NULL, CAST(0 AS bit), N'admin'),
+('57c34bc4-a4d5-4124-8f95-db13978fbeab', 0, N'e10b9a52-c5f2-4be9-bdd1-50b7b47a3747', N'tawfeer@gmail.com', CAST(0 AS bit), CAST(0 AS bit), NULL, N'TAWFEER@GMAIL.COM', N'TAWFEER', NULL, NULL, CAST(0 AS bit), N'SuperMarket', NULL, CAST(0 AS bit), N'tawfeer'),
+('57c34bc4-a4d5-4124-8f95-db13978fbeac', 0, N'742d9aca-1668-4b1f-809e-2f644b6a6c7e', N'employee@gmail.com', CAST(0 AS bit), CAST(0 AS bit), NULL, N'EMPLOYEE@GMAIL.COM', N'EMPLOYEE', NULL, NULL, CAST(0 AS bit), N'Employee', NULL, CAST(0 AS bit), N'employee');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'AccessFailedCount', N'ConcurrencyStamp', N'Email', N'EmailConfirmed', N'LockoutEnabled', N'LockoutEnd', N'NormalizedEmail', N'NormalizedUserName', N'PasswordHash', N'PhoneNumber', N'PhoneNumberConfirmed', N'Role', N'SecurityStamp', N'TwoFactorEnabled', N'UserName') AND [object_id] = OBJECT_ID(N'[AspNetUsers]'))
+    SET IDENTITY_INSERT [AspNetUsers] OFF;
+2024-08-28 14:44:23.104 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'CategoryImage', N'CategoryName') AND [object_id] = OBJECT_ID(N'[Category]'))
+    SET IDENTITY_INSERT [Category] ON;
+INSERT INTO [Category] ([CategoryId], [CategoryImage], [CategoryName])
+VALUES ('63e2c242-e7c2-4ac1-8545-8c635c2cb97a', NULL, N'Drinks'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97b', NULL, N'Food'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97c', NULL, N'Accessories'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97d', NULL, N'Bakery'),
+('63e2c242-e7c2-4ac1-8545-8c635c2cb97e', NULL, N'Meat');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CategoryId', N'CategoryImage', N'CategoryName') AND [object_id] = OBJECT_ID(N'[Category]'))
+    SET IDENTITY_INSERT [Category] OFF;
+2024-08-28 14:44:23.799 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CustomerId', N'CustomerAddress', N'CustomerName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Customer]'))
+    SET IDENTITY_INSERT [Customer] ON;
+INSERT INTO [Customer] ([CustomerId], [CustomerAddress], [CustomerName], [PhoneNumber])
+VALUES ('0f4d2c4b-3c2a-4d58-962f-8b1a1e5d6d89', N'456 Walnut St, Springfield', N'Rachel Hill', 23457),
+('2b98e616-8e6a-4c4a-8908-7e8f6c6b9f7e', N'456 Willow St, Springfield', N'Frank Harris', 89012),
+('2d7418db-c4e4-44c4-947f-e8dc56f0c517', N'321 Maple St, Springfield', N'Bob Brown', 45678),
+('4f4d08a4-8827-4d65-89a6-0a50f4769fa4', N'654 Cedar St, Springfield', N'Charlie Davis', 56789),
+('5e14a6b8-d89c-4a9b-a57d-d53b6f073b1f', N'987 Oak St, Springfield', N'Paul King', 90123),
+('5e1d1c9c-8f2a-4b0b-bcf7-1c44e5a62e1d', N'456 Oak St, Springfield', N'Jane Smith', 23456),
+('6e8e03c6-8d21-44a3-9f5d-17443477d05f', N'321 Oak St, Springfield', N'Henry Lewis', 12345),
+('7f62de52-2c1e-4a79-9e46-3d2f5e1d8e43', N'789 Maple St, Springfield', N'Grace Clark', 90123),
+('a638dfb5-8a52-4fcf-b9e1-4a732df8a38c', N'654 Pine St, Springfield', N'Ivy Walker', 23456),
+('a8e3c9b1-6c1d-4d78-9d2a-4f5b6c7d8e9f', N'987 Walnut St, Springfield', N'Victor Wood', 67891),
+('adad9f9c-94a7-4a07-9a51-8c5c5c8d80cf', N'789 Walnut St, Springfield', N'Mia Scott', 67890),
+('b1adfce6-5d7c-4c2b-8963-07e2e3c0c4a1', N'123 Birch St, Springfield', N'Quincy Green', 12346),
+('b2e8a3c2-17e5-49b1-b0d9-3a6e7e8f9d1e', N'654 Birch St, Springfield', N'Ursula Morgan', 56780),
+('c4c1d85b-f09e-48a0-8f1e-2b4c1d2f6a2d', N'321 Cedar St, Springfield', N'Tina Lee', 45679),
+('c8f76e8d-1b9e-4d3d-8d58-20b2a0f11a3b', N'987 Birch St, Springfield', N'David Wilson', 67890),
+('d1e6a2f5-0d5a-4d35-835b-623eaf6b3b43', N'123 Elm St, Springfield', N'John Doe', 12345),
+('d6f2a9b1-4381-4ef0-8f9b-1a2e3c4d5b67', N'789 Willow St, Springfield', N'Steve Harris', 34568),
+('df6840f1-517b-4c51-9a4d-b8b9e5b4c59c', N'456 Birch St, Springfield', N'Liam Young', 56789),
+('e0d11f8f-fb26-4b58-9b1b-fb18c8b01a2e', N'789 Pine St, Springfield', N'Alice Johnson', 34567),
+('e4a7d7f5-3196-4cc8-9142-9d5ab0d8a746', N'123 Cedar St, Springfield', N'Kathy Allen', 45678),
+('e9f2b3e7-ff84-4e7b-989d-d582f4a0e1d6', N'654 Maple St, Springfield', N'Olivia Nelson', 89012),
+('f0a7c573-55e8-4db1-b31f-93e7b72d4f1d', N'321 Willow St, Springfield', N'Noah Adams', 78901),
+('f4e5b029-3b58-4a67-b1b6-2d23ac7f69d2', N'123 Walnut St, Springfield', N'Emma Taylor', 78901),
+('fabc3a9d-98b4-4c62-9440-5b1e1caa74a2', N'987 Elm St, Springfield', N'Jack Hall', 34567);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CustomerId', N'CustomerAddress', N'CustomerName', N'PhoneNumber') AND [object_id] = OBJECT_ID(N'[Customer]'))
+    SET IDENTITY_INSERT [Customer] OFF;
+2024-08-28 14:44:24.347 +03:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'Cost', N'Description', N'Discount', N'ExpDate', N'ManDate', N'Price', N'ProductCode', N'ProductImage') AND [object_id] = OBJECT_ID(N'[Product]'))
+    SET IDENTITY_INSERT [Product] ON;
+INSERT INTO [Product] ([ProductId], [CategoryId], [Cost], [Description], [Discount], [ExpDate], [ManDate], [Price], [ProductCode], [ProductImage])
+VALUES ('d37d22d5-ba61-4d70-ba0c-b7adff04cd41', '63e2c242-e7c2-4ac1-8545-8c635c2cb97e', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(5 AS real), CAST(0 AS bigint), NULL),
+('d37d22d5-ba61-4d70-ba0c-b7adff04cd4a', '63e2c242-e7c2-4ac1-8545-8c635c2cb97e', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(1.5 AS real), CAST(0 AS bigint), NULL),
+('d37d22d5-ba61-4d70-ba0c-b7adff04cd4b', '63e2c242-e7c2-4ac1-8545-8c635c2cb97a', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(0.99 AS real), CAST(0 AS bigint), NULL),
+('d37d22d5-ba61-4d70-ba0c-b7adff04cd4c', '63e2c242-e7c2-4ac1-8545-8c635c2cb97e', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(1.2 AS real), CAST(0 AS bigint), NULL),
+('d37d22d5-ba61-4d70-ba0c-b7adff04cd4d', '63e2c242-e7c2-4ac1-8545-8c635c2cb97e', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(2 AS real), CAST(0 AS bigint), NULL),
+('d37d22d5-ba61-4d70-ba0c-b7adff04cd4e', '63e2c242-e7c2-4ac1-8545-8c635c2cb97e', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(1 AS real), CAST(0 AS bigint), NULL),
+('d37d22d5-ba61-4d70-ba0c-b7adff04cd4f', '63e2c242-e7c2-4ac1-8545-8c635c2cb97d', CAST(0 AS real), NULL, 0.0, '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000', CAST(2.5 AS real), CAST(0 AS bigint), NULL);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'ProductId', N'CategoryId', N'Cost', N'Description', N'Discount', N'ExpDate', N'ManDate', N'Price', N'ProductCode', N'ProductImage') AND [object_id] = OBJECT_ID(N'[Product]'))
+    SET IDENTITY_INSERT [Product] OFF;
+2024-08-28 14:44:25.321 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'SuperMarketId', N'Address', N'AppUserId', N'PhoneNumber', N'SupermarketName') AND [object_id] = OBJECT_ID(N'[SuperMarket]'))
+    SET IDENTITY_INSERT [SuperMarket] ON;
+INSERT INTO [SuperMarket] ([SuperMarketId], [Address], [AppUserId], [PhoneNumber], [SupermarketName])
+VALUES ('5f2cfd7a-f135-4dad-9ebd-97014f203791', NULL, '57c34bc4-a4d5-4124-8f95-db13978fbeab', 0, N'Tawfeer');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'SuperMarketId', N'Address', N'AppUserId', N'PhoneNumber', N'SupermarketName') AND [object_id] = OBJECT_ID(N'[SuperMarket]'))
+    SET IDENTITY_INSERT [SuperMarket] OFF;
+2024-08-28 14:44:25.660 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Address', N'AppUserId', N'EmployeeImage', N'EmployeeName', N'PhoneNumber', N'SupermarketId') AND [object_id] = OBJECT_ID(N'[Employee]'))
+    SET IDENTITY_INSERT [Employee] ON;
+INSERT INTO [Employee] ([EmployeeId], [Address], [AppUserId], [EmployeeImage], [EmployeeName], [PhoneNumber], [SupermarketId])
+VALUES ('536d010d-465c-4c4b-84e9-18d5df4d86aa', N'1 Main St', '57c34bc4-a4d5-4124-8f95-db13978fbeac', NULL, N'Emily Roberts', 1234, '5f2cfd7a-f135-4dad-9ebd-97014f203791');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId', N'Address', N'AppUserId', N'EmployeeImage', N'EmployeeName', N'PhoneNumber', N'SupermarketId') AND [object_id] = OBJECT_ID(N'[Employee]'))
+    SET IDENTITY_INSERT [Employee] OFF;
+2024-08-28 14:44:25.691 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'StockId', N'ProductId', N'Quantity', N'SuperMarketId') AND [object_id] = OBJECT_ID(N'[Stock]'))
+    SET IDENTITY_INSERT [Stock] ON;
+INSERT INTO [Stock] ([StockId], [ProductId], [Quantity], [SuperMarketId])
+VALUES ('5983cb43-1364-4227-bbf0-0c6ade03bd81', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd41', CAST(80 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791'),
+('5983cb43-1364-4227-bbf0-0c6ade03bd8a', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd4a', CAST(100 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791'),
+('5983cb43-1364-4227-bbf0-0c6ade03bd8b', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd4b', CAST(150 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791'),
+('5983cb43-1364-4227-bbf0-0c6ade03bd8c', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd4c', CAST(200 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791'),
+('5983cb43-1364-4227-bbf0-0c6ade03bd8d', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd4d', CAST(180 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791'),
+('5983cb43-1364-4227-bbf0-0c6ade03bd8e', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd4e', CAST(120 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791'),
+('5983cb43-1364-4227-bbf0-0c6ade03bd8f', 'd37d22d5-ba61-4d70-ba0c-b7adff04cd4f', CAST(90 AS bigint), '5f2cfd7a-f135-4dad-9ebd-97014f203791');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'StockId', N'ProductId', N'Quantity', N'SuperMarketId') AND [object_id] = OBJECT_ID(N'[Stock]'))
+    SET IDENTITY_INSERT [Stock] OFF;
+2024-08-28 14:44:26.127 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeLogId', N'EmployeeId', N'LogInDate', N'LogOutDate') AND [object_id] = OBJECT_ID(N'[EmployeeLog]'))
+    SET IDENTITY_INSERT [EmployeeLog] ON;
+INSERT INTO [EmployeeLog] ([EmployeeLogId], [EmployeeId], [LogInDate], [LogOutDate])
+VALUES ('536d010d-465c-4c4b-84e9-18d5df4d86ba', '536d010d-465c-4c4b-84e9-18d5df4d86aa', '0001-01-01T00:00:00.0000000', '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeLogId', N'EmployeeId', N'LogInDate', N'LogOutDate') AND [object_id] = OBJECT_ID(N'[EmployeeLog]'))
+    SET IDENTITY_INSERT [EmployeeLog] OFF;
+2024-08-28 14:44:26.143 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'InvoiceId', N'EmployeeId', N'Total') AND [object_id] = OBJECT_ID(N'[Invoice]'))
+    SET IDENTITY_INSERT [Invoice] ON;
+INSERT INTO [Invoice] ([InvoiceId], [EmployeeId], [Total])
+VALUES ('b8b1d94c-7b45-4f7e-8b79-3a24894d4a77', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(150.75 AS real)),
+('c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(220.5 AS real)),
+('d1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(350 AS real)),
+('e2d5a4c1-0c5f-4d1a-9c9a-f7a6b0e1e76a', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(190.25 AS real)),
+('f3e6d9b2-1d6a-4e4a-8f0a-4c6b9f7e8e8b', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(175 AS real)),
+('f4b8d1c5-7a6b-4b2a-8d2e-8f9c4d5e0d8f', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(220 AS real)),
+('f5c9e2d1-3b5d-4e4b-8e9d-7f6b1c0a8d7e', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(140.75 AS real)),
+('f6d7b8e2-4c6e-4a0f-8f1c-9e3d4b5e6c7f', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(310 AS real)),
+('f7e8c9d3-5b7f-4c1a-9e8b-0a1d2e3f4b6c', '536d010d-465c-4c4b-84e9-18d5df4d86aa', CAST(275.5 AS real));
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'InvoiceId', N'EmployeeId', N'Total') AND [object_id] = OBJECT_ID(N'[Invoice]'))
+    SET IDENTITY_INSERT [Invoice] OFF;
+2024-08-28 14:44:27.084 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CustomerId', N'InvoiceId') AND [object_id] = OBJECT_ID(N'[CustomerInvoice]'))
+    SET IDENTITY_INSERT [CustomerInvoice] ON;
+INSERT INTO [CustomerInvoice] ([CustomerId], [InvoiceId])
+VALUES ('2b98e616-8e6a-4c4a-8908-7e8f6c6b9f7e', 'd1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b'),
+('2d7418db-c4e4-44c4-947f-e8dc56f0c517', 'e2d5a4c1-0c5f-4d1a-9c9a-f7a6b0e1e76a'),
+('4f4d08a4-8827-4d65-89a6-0a50f4769fa4', 'f3e6d9b2-1d6a-4e4a-8f0a-4c6b9f7e8e8b'),
+('5e1d1c9c-8f2a-4b0b-bcf7-1c44e5a62e1d', 'c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99'),
+('6e8e03c6-8d21-44a3-9f5d-17443477d05f', 'f3e6d9b2-1d6a-4e4a-8f0a-4c6b9f7e8e8b'),
+('7f62de52-2c1e-4a79-9e46-3d2f5e1d8e43', 'e2d5a4c1-0c5f-4d1a-9c9a-f7a6b0e1e76a'),
+('c8f76e8d-1b9e-4d3d-8d58-20b2a0f11a3b', 'b8b1d94c-7b45-4f7e-8b79-3a24894d4a77'),
+('d1e6a2f5-0d5a-4d35-835b-623eaf6b3b43', 'b8b1d94c-7b45-4f7e-8b79-3a24894d4a77'),
+('e0d11f8f-fb26-4b58-9b1b-fb18c8b01a2e', 'd1c3b8a2-41c8-4b27-9f7e-9a4f8e2a6d8b'),
+('f4e5b029-3b58-4a67-b1b6-2d23ac7f69d2', 'c9a9e9d1-d23d-4f63-a1b3-0a0f7e62ec99');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'CustomerId', N'InvoiceId') AND [object_id] = OBJECT_ID(N'[CustomerInvoice]'))
+    SET IDENTITY_INSERT [CustomerInvoice] OFF;
+2024-08-28 14:44:27.708 +03:00 [INF] Executed DbCommand (126ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Admin_AppUserId] ON [Admin] ([AppUserId]);
+2024-08-28 14:44:27.733 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2024-08-28 14:44:27.984 +03:00 [INF] Executed DbCommand (251ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2024-08-28 14:44:27.988 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2024-08-28 14:44:27.990 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2024-08-28 14:44:27.994 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2024-08-28 14:44:28.005 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2024-08-28 14:44:28.012 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2024-08-28 14:44:28.017 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CustomerInvoice_InvoiceId] ON [CustomerInvoice] ([InvoiceId]);
+2024-08-28 14:44:28.508 +03:00 [INF] Executed DbCommand (109ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Employee_AppUserId] ON [Employee] ([AppUserId]);
+2024-08-28 14:44:28.532 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Employee_SupermarketId] ON [Employee] ([SupermarketId]);
+2024-08-28 14:44:28.545 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_EmployeeLog_EmployeeId] ON [EmployeeLog] ([EmployeeId]);
+2024-08-28 14:44:28.557 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Invoice_EmployeeId] ON [Invoice] ([EmployeeId]);
+2024-08-28 14:44:28.564 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_InvoiceDetails_InvoiceId] ON [InvoiceDetails] ([InvoiceId]);
+2024-08-28 14:44:28.575 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_InvoiceDetails_ProductId] ON [InvoiceDetails] ([ProductId]);
+2024-08-28 14:44:28.579 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Product_CategoryId] ON [Product] ([CategoryId]);
+2024-08-28 14:44:28.588 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_SalesHistory_InvoiceId] ON [SalesHistory] ([InvoiceId]);
+2024-08-28 14:44:28.604 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Stock_ProductId] ON [Stock] ([ProductId]);
+2024-08-28 14:44:28.608 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Stock_SuperMarketId] ON [Stock] ([SuperMarketId]);
+2024-08-28 14:44:28.614 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_SuperMarket_AppUserId] ON [SuperMarket] ([AppUserId]);
+2024-08-28 14:44:28.617 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240828114356_Database-Rework-Adding-Authentication-Database-Schema', N'8.0.7');
+2024-08-28 15:12:30.824 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-28 15:12:32.765 +03:00 [INF] Now listening on: https://localhost:7156
+2024-08-28 15:12:32.770 +03:00 [INF] Now listening on: http://localhost:5291
+2024-08-28 15:12:32.777 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-28 15:12:32.790 +03:00 [INF] Hosting environment: Development
+2024-08-28 15:12:32.802 +03:00 [INF] Content root path: C:\Users\user\Desktop\WorkShop\.Net Development\Projects\POS System\POS System
+2024-08-28 15:12:35.474 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger - null null
+2024-08-28 15:12:37.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger - 301 0 null 1668.2833ms
+2024-08-28 15:12:37.278 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-28 15:12:37.985 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 707.3351ms
+2024-08-28 15:12:38.022 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - null null
+2024-08-28 15:12:38.016 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui.css - null null
+2024-08-28 15:12:38.022 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/swagger-ui-bundle.js - null null
+2024-08-28 15:12:38.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-28 15:12:38.210 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-28 15:12:38.464 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-08-28 15:12:38.700 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 490.5779ms
+2024-08-28 15:12:38.821 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-08-28 15:12:38.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui.css - 200 143943 text/css 798.5913ms
+2024-08-28 15:12:38.702 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-08-28 15:12:38.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 918.1618ms
+2024-08-28 15:12:38.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 878.3567ms
+2024-08-28 15:12:39.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 849.1034ms
+2024-08-28 15:12:39.472 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-28 15:12:40.730 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Employee" for actions - POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System),POS_System.Controllers.EmployeeController.GetEmployeeImage (POS System). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-28 15:12:41.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 2402.8602ms
+2024-08-28 15:13:20.602 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-28 15:13:32.819 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/27/2024 7:40:39 AM', Current time (UTC): '8/28/2024 12:13:32 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-08-28 15:13:33.663 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '8/27/2024 7:40:39 AM', Current time (UTC): '8/28/2024 12:13:32 PM'.
+2024-08-28 15:13:33.995 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-28 15:13:34.037 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-28 15:13:34.406 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 401 0 null 13801.75ms
+2024-08-28 15:13:56.055 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7156/api/SuperMarketAuth/Login - application/json 63
+2024-08-28 15:13:56.155 +03:00 [INF] Executing endpoint 'POS_System.Controllers.Auth_Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-28 15:13:56.239 +03:00 [INF] Route matched with {action = "Login", controller = "SuperMarketAuth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Entities.DTO.Login.AppUserLogin) on controller POS_System.Controllers.Auth_Controllers.SuperMarketAuthController (POS System).
+2024-08-28 15:14:02.141 +03:00 [WRN] No store type was specified for the decimal property 'Discount' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-08-28 15:14:06.236 +03:00 [INF] Executed DbCommand (185ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-08-28 15:14:06.689 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[@__appUserId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [s].[SuperMarketId], [s].[Address], [s].[AppUserId], [s].[PhoneNumber], [s].[SupermarketName]
+FROM [SuperMarket] AS [s]
+WHERE [s].[AppUserId] = @__appUserId_0
+2024-08-28 15:14:06.999 +03:00 [INF] Executing OkObjectResult, writing value of type 'Entities.DTO.Login.SuperMarketLoginResponseDto'.
+2024-08-28 15:14:07.222 +03:00 [INF] Executed action POS_System.Controllers.Auth_Controllers.SuperMarketAuthController.Login (POS System) in 10923.6848ms
+2024-08-28 15:14:07.237 +03:00 [INF] Executed endpoint 'POS_System.Controllers.Auth_Controllers.SuperMarketAuthController.Login (POS System)'
+2024-08-28 15:14:07.282 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7156/api/SuperMarketAuth/Login - 200 null application/json; charset=utf-8 11227.7712ms
+2024-08-28 15:14:35.985 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-28 15:14:35.998 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-08-28 15:14:36.008 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+2024-08-28 15:14:36.014 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-28 15:14:36.030 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-28 15:14:36.033 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 401 0 null 49.849ms
+2024-08-28 15:14:39.100 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-28 15:14:39.138 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-08-28 15:14:39.153 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+2024-08-28 15:14:39.161 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-28 15:14:39.167 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-28 15:14:39.171 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 401 0 null 70.8764ms
+2024-08-28 15:14:46.199 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7156/api/SuperMarket - null null
+2024-08-28 15:14:46.260 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-08-28 15:14:46.296 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10225: Lifetime validation failed. The token is missing an Expiration Time. Tokentype: 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken'.
+2024-08-28 15:14:46.313 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-28 15:14:46.326 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-28 15:14:46.352 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/SuperMarket - 401 0 null 149.7547ms

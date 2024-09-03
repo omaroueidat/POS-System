@@ -10,9 +10,6 @@ namespace Entities.DTO.Request
 {
     public class EmployeeRequestDto
     {
-        [Required]
-        public Guid SupermarketId { get; set; }
-
         [MaxLength(30)]
         [Required]
         public string? EmployeeName { get; set; }

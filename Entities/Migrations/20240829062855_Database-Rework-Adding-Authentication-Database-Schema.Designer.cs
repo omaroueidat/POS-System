@@ -4,6 +4,7 @@ using Entities.Database_Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entities.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240829062855_Database-Rework-Adding-Authentication-Database-Schema")]
+    partial class DatabaseReworkAddingAuthenticationDatabaseSchema
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -120,7 +123,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("57c34bc4-a4d5-4124-8f95-db13978fbeaa"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0b40633d-b41c-4d9f-b022-de02da176505",
+                            ConcurrencyStamp = "a64e30d5-78ed-46b2-83ab-e2da038dead8",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
@@ -135,7 +138,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("57c34bc4-a4d5-4124-8f95-db13978fbeab"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f922331f-6557-49fd-86cb-a7274c740866",
+                            ConcurrencyStamp = "c2248349-55f9-4d40-83eb-fa29a0436f33",
                             Email = "tawfeer@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
@@ -150,7 +153,7 @@ namespace Entities.Migrations
                         {
                             Id = new Guid("57c34bc4-a4d5-4124-8f95-db13978fbeac"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3d8a537e-377f-491d-9dee-f44ff51d6c81",
+                            ConcurrencyStamp = "6b32e614-0771-4495-9809-f4177da28b4b",
                             Email = "employee@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
@@ -920,19 +923,19 @@ namespace Entities.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d2f1c83b-d772-4b17-a0b1-b8e9cc610e6d"),
+                            Id = new Guid("829c81b7-4d09-40c1-8c85-bdd122f80e4a"),
                             Name = "SuperMarket",
                             NormalizedName = "SUPERMARKET"
                         },
                         new
                         {
-                            Id = new Guid("690a90ee-f28d-446a-a96d-a541782e05d8"),
+                            Id = new Guid("3cea128b-61a8-4f3c-9e9f-4746373900c5"),
                             Name = "Employee",
                             NormalizedName = "EMPLOYEE"
                         },
                         new
                         {
-                            Id = new Guid("3b26ebb6-f164-4b26-aab2-766f7fed625e"),
+                            Id = new Guid("3c356507-2ddb-42a8-b524-ccd91bdb6907"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

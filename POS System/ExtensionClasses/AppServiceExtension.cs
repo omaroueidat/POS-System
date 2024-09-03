@@ -1,4 +1,5 @@
 ﻿using Entities.Database_Context;
+using Entities.Domain.Application;
 using Entities.Mappings;
 using Entities.Models.SuperMarketModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -10,6 +11,7 @@ using Serilog;
 using Services.Implementation;
 using Services.Interfaces;
 using System.Runtime.CompilerServices;
+using System.Security.Claims;
 using System.Text;
 
 namespace POS_System.ExtensionClasses
@@ -64,8 +66,10 @@ namespace POS_System.ExtensionClasses
             services.AddScoped<ISuperMarketService, SupermarketService>();
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IAdminService, AdminService>();
+            
 
-            services.AddIdentityCore<SuperMarket>(options =>
+            services.AddIdentityCore<AppUser>(options =>
             {
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
@@ -73,21 +77,26 @@ namespace POS_System.ExtensionClasses
                 options.Password.RequireNonAlphanumeric = false;
                 options.SignIn.RequireConfirmedEmail = true;
             })
-            .AddTokenProvider<DataProtectorTokenProvider<SuperMarket>>("POS")
+            .AddRoles<IdentityRole<Guid>>()
+            .AddTokenProvider<DataProtectorTokenProvider<AppUser>>("POS")
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters()
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = configuration["Jwt:Issuer"],
-                    ValidAudience = configuration["Jwt:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(
+                .AddJwtBearer(options => {
+                    options.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = configuration["Jwt:Issuer"],
+                        ValidAudience = configuration["Jwt:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(configuration["Jwt:Key"]))
+                    };
+
+                    options.SaveToken = true;
                 }
             );
 

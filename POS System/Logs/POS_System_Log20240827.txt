@@ -198,3 +198,19 @@ WHERE [e].[SupermarketId] = @__superMarketId_0
 2024-08-27 10:14:09.936 +03:00 [INF] Executed action POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System) in 45.7968ms
 2024-08-27 10:14:09.943 +03:00 [INF] Executed endpoint 'POS_System.Controllers.EmployeeController.GetEmployeesOfSupermarket (POS System)'
 2024-08-27 10:14:09.949 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7156/api/Employee/30f7b5d4-6f6f-41ef-9cd6-ae050c0812ac - 200 null application/json; charset=utf-8 246.0741ms
+2024-08-27 10:21:33.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-27 10:21:33.105 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 36.6366ms
+2024-08-27 10:21:33.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-27 10:21:33.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-27 10:21:33.286 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.6046ms
+2024-08-27 10:21:33.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 21.8015ms
+2024-08-27 10:21:34.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-27 10:21:34.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.0269ms
+2024-08-27 11:47:35.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/index.html - null null
+2024-08-27 11:47:35.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/index.html - 200 null text/html;charset=utf-8 96.4559ms
+2024-08-27 11:47:35.722 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_vs/browserLink - null null
+2024-08-27 11:47:35.725 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-27 11:47:35.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 51.5693ms
+2024-08-27 11:47:36.037 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/_vs/browserLink - 200 null text/javascript; charset=UTF-8 314.753ms
+2024-08-27 11:47:36.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - null null
+2024-08-27 11:47:36.431 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.7962ms
